@@ -13,15 +13,12 @@ namespace MHW_Save_Editor.InvestigationEditing
     {
         //public event PropertyChangedEventHandler PropertyChanged;
 
-        public Investigation(byte[] newdata)
+        public Investigation(byte[] newdata=null)
         {
-            if (newdata.Length != 0) _underlyingInvestigationThinLayer = new InvestigationThinLayer(newdata);
-            else
-            {
-                byte[] newish = new byte[Investigation.inv_size];
-                Array.Copy(InvestigationThinLayer.nullinvestigation, 0, newish, 0, Investigation.inv_size);
-                _underlyingInvestigationThinLayer = new InvestigationThinLayer(newish);
-            }
+            if (newdata == null) newdata = InvestigationThinLayer.nullinvestigation;
+            byte[] newish = new byte[inv_size];
+            Array.Copy(newdata, 0, newish, 0, inv_size);
+            _underlyingInvestigationThinLayer = new InvestigationThinLayer(newish);
         }
 
         private InvestigationThinLayer _underlyingInvestigationThinLayer;

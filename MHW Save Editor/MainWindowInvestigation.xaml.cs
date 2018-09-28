@@ -186,7 +186,7 @@ namespace MHW_Save_Editor
                     else
                     {
                         list.RemoveAt(i);
-                        list.Add(new Investigation(InvestigationThinLayer.nullinvestigation));
+                        list.Add(new Investigation());
                         j++;
                     }
                 }
@@ -219,7 +219,7 @@ namespace MHW_Save_Editor
                         Investigation inv = list[i];
                         if (inv.Filled && filter(inv))
                         {
-                            list[i] = new Investigation(InvestigationThinLayer.nullinvestigation);
+                            list[i] = new Investigation();
                         }
                     }
 
