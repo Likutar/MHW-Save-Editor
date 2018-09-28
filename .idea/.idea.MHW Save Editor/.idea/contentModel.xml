@@ -39,6 +39,7 @@
             <e p="GenericFile.cs" t="Include" />
             <e p="SaveFile.cs" t="Include" />
           </e>
+          <e p="InventoryEditing" t="Include" />
           <e p="InvestigationEditing" t="Include">
             <e p="Boxstore.xaml" t="Include" />
             <e p="Boxstore.xaml.cs" t="Include" />
@@ -50,6 +51,9 @@
             <e p="InvestigationViewModel.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
+            <e p="Icon" t="Include">
+              <e p="monhan_fw_F6x_icon.ico" t="Include" />
+            </e>
             <e p="ResourcesDictionary.xaml" t="Include" />
           </e>
           <e p="Support" t="Include">
