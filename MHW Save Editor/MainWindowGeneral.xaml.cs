@@ -15,7 +15,7 @@ namespace MHW_Save_Editor
         {
             if (saveFile == null) return;
             string steamstring;
-            InputBox inputDialog = new InputBox("Enter replacement steam ID:", saveFile.ReadSteamID().ToString());
+            InputBox inputDialog = new InputBox("Enter replacement steam ID:", saveFile.ReadSteamID().ToString(), 20);
             if (inputDialog.ShowDialog() == true)
             {
                 steamstring = inputDialog.Answer;

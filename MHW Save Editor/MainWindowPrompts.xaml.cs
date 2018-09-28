@@ -82,7 +82,7 @@ namespace MHW_Save_Editor
                                                 _aux_allowed_variables +
                                                 "\nExample of a Sort: r,-g,a \n" +
                                                 "Will sort first by rank descending, then within the same rank by goal ascending \n" +
-                                                "and finally within goals by attempts left descending.\n", "");
+                                                "and finally within goals by attempts left descending.\n", "", 100);
             if (inputDialog.ShowDialog() == true)
             {
                 try
@@ -123,7 +123,8 @@ namespace MHW_Save_Editor
             Expression e = new Expression();
             InputBox inputDialog = new InputBox("Insert a fully formed expression with boolean result. Investigations satisfying the rule will be cleared.\n" +
                                                 _aux_allowed_variables +
-                                                "\nExample of a Filter: (g == 2)|((t <= 50) & (f > 3)) will remove Wildlife and Hunts with less than 50min timer which have less than 3 faints.\n", "");
+                                                "\nExample of a Filter: (g == 2)|((t <= 50) & (f > 3)) will remove Wildlife and Hunts with less than 50min timer which have less than 3 faints.\n", 
+                                                "", 100);
             if (inputDialog.ShowDialog() == true)
             {
                 string response = inputDialog.Answer;

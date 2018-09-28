@@ -5,11 +5,12 @@ namespace MHW_Save_Editor
 {
     public partial class InputBox : Window
     {
-        public InputBox(string question, string defaultAnswer = "")
+        public InputBox(string question, string defaultAnswer = "", int sizeLimit = 0)
         {
             InitializeComponent();
             lblQuestion.Content = question;
             txtAnswer.Text = defaultAnswer;
+            txtAnswer.MaxLength = sizeLimit;
         }
 
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
