@@ -29,19 +29,26 @@ namespace MHW_Save_Editor
                     foreach (string argument in intermediates)
                     {
                         if (argument.Contains('-'))positions.AddRange(ParseRange(argument));
-                        else positions.Add(  Math.Min(Math.Max(Convert.ToInt32(argument),1),Investigation.inv_number)   );
+                        else positions.Add(  RangeCheck(Convert.ToInt32(argument))  );
                     }
                 }
                 catch{MessageBox.Show("Invalid Position List", "Invalid Position List", MessageBoxButton.OK);} 
             }
+            inputDialog.Close();
             return positions;
         }
 
+        private static int RangeCheck(int position)
+        {
+            if (1 > position || position > Investigation.inv_number) throw new IndexOutOfRangeException(position.ToString());
+            return position;
+        }
+        
         private List<int> ParseRange(string argument)
         {
             List<string>range = Regex.Replace(argument, @"\s+", "").Split('-').ToList();
-            int lowerend = Math.Min(Math.Max(Convert.ToInt32(range[0]),1),Investigation.inv_number);
-            int upperend = Math.Min(Math.Max(Convert.ToInt32(range[1]),1),Investigation.inv_number);
+            int lowerend = RangeCheck(Convert.ToInt32(range[0]));
+            int upperend = RangeCheck(Convert.ToInt32(range[1]));
             return Enumerable.Range(lowerend, upperend-lowerend+1).ToList();
         }
 
@@ -86,10 +93,13 @@ namespace MHW_Save_Editor
                     List<string> intermediates = response.Replace(" ", String.Empty).Split(',').ToList();
                     foreach (string step in intermediates)
                         mapping.Add(step.Contains('-')?(x=>-_aux_func[step[1]](x)):_aux_func[step[0]]);
+                    inputDialog.Close();
                     return (x => mapping.Apply(x));
                 }
                 catch{MessageBox.Show("Invalid Ordering String", "Invalid Ordering String", MessageBoxButton.OK);} 
             }
+
+            inputDialog.Close();
             return null;
         }
 
@@ -117,6 +127,7 @@ namespace MHW_Save_Editor
             if (inputDialog.ShowDialog() == true)
             {
                 string response = inputDialog.Answer;
+                inputDialog.Close();
                 return (x => (bool) e.Evaluate(response.Replace("A", _aux_func['A'](x).ToString())
                             .Replace("f", _aux_func['f'](x).ToString())
                             .Replace("h", _aux_func['h'](x).ToString())
@@ -129,6 +140,7 @@ namespace MHW_Save_Editor
                             .Replace("l", _aux_func['l'](x).ToString())
                             .Replace(" ", String.Empty)));
             }
+            inputDialog.Close();
             return null;
         }
       
@@ -146,10 +158,6 @@ namespace MHW_Save_Editor
             var openFileDialog = new SaveFileDialog();
             openFileDialog.ShowDialog();
             filepath = openFileDialog.FileName;
-            if (filepath!=""){
-                Stream fStream = File.Create(filepath);
-                fStream.Close();
-            }
             return filepath != "";
         }
         

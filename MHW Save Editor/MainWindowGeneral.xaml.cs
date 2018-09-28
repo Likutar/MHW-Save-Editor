@@ -30,6 +30,7 @@ namespace MHW_Save_Editor
                     MessageBox.Show("Invalid Steam ID", "Invalid Steam ID", MessageBoxButton.OK);
                 }
             }
+            inputDialog.Close();
         }
     }
 }
