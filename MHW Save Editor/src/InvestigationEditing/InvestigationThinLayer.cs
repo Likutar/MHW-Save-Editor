@@ -121,10 +121,10 @@ namespace MHW_Save_Editor.InvestigationEditing
             get => invdata[36];
             set => invdata[36] = (byte) value;
         }
-        public int Y3
+        public bool Y3
         {
-            get => invdata[37];
-            set => invdata[37] = (byte) value;
+            get => invdata[37]!=0x00;
+            set => invdata[37] = (byte) (value?0x01:0x00);
         }
         public int FaintIndex
         {

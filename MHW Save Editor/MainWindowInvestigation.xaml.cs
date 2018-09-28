@@ -179,15 +179,15 @@ namespace MHW_Save_Editor
                 "InvestigationCollectionView"]).SourceCollection;
             if (sorterer == null)
             {
-                int j = 0;
-                for (int i = 0; i < Investigation.inv_number - j;)
+                int j;
+                for (int i = 0; i < Investigation.inv_number; i++)
                 {
-                    if (list[i].Filled) i++;
-                    else
+                    if (!list[i].Filled)
                     {
-                        list.RemoveAt(i);
-                        list.Add(new Investigation());
-                        j++;
+                        j = i+1;
+                        while (j < Investigation.inv_number && !list[j].Filled) j++;
+                        if (j == Investigation.inv_number) break;
+                        list.Swap(i, j);
                     }
                 }
             }

@@ -208,7 +208,7 @@ namespace MHW_Save_Editor
                 case (0):
                     GeneralEditHandler(command);
                     break;
-                case(1):
+                case (1):
                     InvestigationsEditHandler(command);
                     break;
             }

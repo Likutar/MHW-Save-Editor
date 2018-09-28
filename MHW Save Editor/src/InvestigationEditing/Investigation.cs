@@ -262,7 +262,7 @@ namespace MHW_Save_Editor.InvestigationEditing
                 RaisePropertyChanged();
             }
         }
-        public int Y3
+        public bool Y3
         {
             get => _underlyingInvestigationThinLayer.Y3;
             set
