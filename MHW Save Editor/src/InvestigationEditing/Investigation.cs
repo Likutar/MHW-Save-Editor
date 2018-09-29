@@ -241,6 +241,7 @@ namespace MHW_Save_Editor.InvestigationEditing
                 RaisePropertyChanged("CurrentFlourishes");
                 RaisePropertyChanged("FlourishIndex");
                 RaisePropertyChanged("Legality");
+                RaisePropertyChanged("LocaleTitle");
             }
         }
 
