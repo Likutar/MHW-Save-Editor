@@ -13,6 +13,9 @@
                   IsSynchronizedWithCurrentItem="True"
                   EnableRowVirtualization="False"
                   HeadersVisibility="Column"
+                  CanUserSortColumns="False"
+                  CanUserReorderColumns="False"
+                  CanUserAddRows="False"
             >
             <i:Interaction.Behaviors>
                 <support:ScrollDataGridRowIntoView />
