@@ -13,6 +13,7 @@ AsteriskAmpersand - For rewriting the base GUI to support a complete editor, doi
 Kaito - For helping testing and debugging the investigation editor and the new GUI.  
 goose - For the appearance struct.  
 V00d00y - For almost every other structure in the save files not found by the previously listed.  
+V00d00y and Stratas - For robustness testing and the second for help with profiling performances.
 Seikur0 - For his tables which allowed V00d00y to do the above listed.  
 The investigation editor testers: AllStarTech, Kaito, nicemoreoften, Syelia Walldasher, V00d00y, Stratas.  
 The saves fallen in battle: nicemoreoften and Saddah.
