@@ -16,6 +16,7 @@
                   CanUserSortColumns="False"
                   CanUserReorderColumns="False"
                   CanUserAddRows="False"
+                  CanUserDeleteRows="False"
             >
             <i:Interaction.Behaviors>
                 <support:ScrollDataGridRowIntoView />
