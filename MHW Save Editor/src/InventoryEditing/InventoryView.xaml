@@ -1,0 +1,23 @@
+<UserControl x:Class="MHW_Save_Editor.InventoryEditing.InventoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MHW_Save_Editor.InventoryEditing"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Box Contents -->
+            <RowDefinition Height="5*" />
+            <!-- Item Description -->
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <ContentControl Name="InventoryContents" Grid.Row="0">
+            <local:InventoryContentsView/>
+        </ContentControl>
+        <ContentControl Name="ItemContents" Grid.Row="1">
+            <local:ItemView/>
+        </ContentControl>        
+    </Grid>
+</UserControl>

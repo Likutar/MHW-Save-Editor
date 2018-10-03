@@ -40,7 +40,13 @@
             <e p="SaveFile.cs" t="Include" />
           </e>
           <e p="InventoryEditing" t="Include">
-            <e p="InventoryThinLayer.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
+            <e p="InventoryContentsView.xaml" t="Include" />
+            <e p="InventoryContentsView.xaml.cs" t="Include" />
+            <e p="InventoryView.xaml" t="Include" />
+            <e p="InventoryView.xaml.cs" t="Include" />
+            <e p="ItemView.xaml" t="Include" />
+            <e p="ItemView.xaml.cs" t="Include" />
           </e>
           <e p="InvestigationEditing" t="Include">
             <e p="Boxstore.xaml" t="Include" />
@@ -56,6 +62,7 @@
             <e p="Icon" t="Include">
               <e p="monhan_fw_F6x_icon.ico" t="Include" />
             </e>
+            <e p="MasterItemList.json" t="Include" />
             <e p="ResourcesDictionary.xaml" t="Include" />
           </e>
           <e p="Support" t="Include">
@@ -72,6 +79,8 @@
         <e p="Tabs" t="Include">
           <e p="GeneralTab.xaml" t="Include" />
           <e p="GeneralTab.xaml.cs" t="Include" />
+          <e p="InventoryTab.xaml" t="Include" />
+          <e p="InventoryTab.xaml.cs" t="Include" />
           <e p="InvestigationsTab.xaml" t="Include" />
           <e p="InvestigationsTab.xaml.cs" t="Include" />
         </e>

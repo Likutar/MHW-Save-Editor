@@ -44,6 +44,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NuGet.MultiParse, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\NuGet.MultiParse.1.0.0\lib\net35\NuGet.MultiParse.dll</HintPath>
       <Private>True</Private>
@@ -117,7 +121,16 @@
     <Compile Include="src\Data\NotifyUIBase.cs" />
     <Compile Include="src\FileFormat\GenericFile.cs" />
     <Compile Include="src\FileFormat\SaveFile.cs" />
-    <Compile Include="src\InventoryEditing\InventoryThinLayer.cs" />
+    <Compile Include="src\InventoryEditing\Inventory.cs" />
+    <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">
+      <DependentUpon>InventoryContentsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\InventoryEditing\InventoryView.xaml.cs">
+      <DependentUpon>InventoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\InventoryEditing\ItemView.xaml.cs">
+      <DependentUpon>ItemView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\InvestigationEditing\Boxstore.xaml.cs">
       <DependentUpon>Boxstore.xaml</DependentUpon>
     </Compile>
@@ -141,6 +154,9 @@
     <Compile Include="Tabs\GeneralTab.xaml.cs">
       <DependentUpon>GeneralTab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\InventoryTab.xaml.cs">
+      <DependentUpon>InventoryTab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\InvestigationsTab.xaml.cs">
       <DependentUpon>InvestigationsTab.xaml</DependentUpon>
     </Compile>
@@ -158,9 +174,13 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="src\InventoryEditing\InventoryContentsView.xaml" />
+    <Page Include="src\InventoryEditing\InventoryView.xaml" />
+    <Page Include="src\InventoryEditing\ItemView.xaml" />
     <Page Include="src\InvestigationEditing\Boxstore.xaml" />
     <Page Include="src\InvestigationEditing\InvestigationView.xaml" />
     <Page Include="Tabs\GeneralTab.xaml" />
+    <Page Include="Tabs\InventoryTab.xaml" />
     <Page Include="Tabs\InvestigationsTab.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="src\Resources\MasterItemList.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="src\Resources\Icon\monhan_fw_F6x_icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

@@ -1,0 +1,26 @@
+<UserControl x:Class="MHW_Save_Editor.InventoryEditing.InventoryContentsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MHW_Save_Editor.InventoryEditing"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding }" >
+            <ItemsControl.ItemsPanel>
+                <!-- specify the panel that is the container for the items -->
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="10" Columns="10" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <!-- specify the template used to render each item -->
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <!-- How to display each "inventory slot of the collection" -->
+                    <TextBox Text="{Binding Path=., UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</UserControl>
