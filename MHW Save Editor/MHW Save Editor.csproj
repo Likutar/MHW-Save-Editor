@@ -122,14 +122,20 @@
     <Compile Include="src\FileFormat\GenericFile.cs" />
     <Compile Include="src\FileFormat\SaveFile.cs" />
     <Compile Include="src\InventoryEditing\Inventory.cs" />
+    <Compile Include="src\InventoryEditing\InventoryAreas.xaml.cs">
+      <DependentUpon>InventoryAreas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">
       <DependentUpon>InventoryContentsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryView.xaml.cs">
       <DependentUpon>InventoryView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="src\InventoryEditing\ItemView.xaml.cs">
-      <DependentUpon>ItemView.xaml</DependentUpon>
+    <Compile Include="src\InventoryEditing\ItemDescriptionView.xaml.cs">
+      <DependentUpon>ItemDescriptionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\InventoryEditing\SlotView.xaml.cs">
+      <DependentUpon>SlotView.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InvestigationEditing\Boxstore.xaml.cs">
       <DependentUpon>Boxstore.xaml</DependentUpon>
@@ -174,9 +180,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="src\InventoryEditing\InventoryAreas.xaml" />
     <Page Include="src\InventoryEditing\InventoryContentsView.xaml" />
     <Page Include="src\InventoryEditing\InventoryView.xaml" />
-    <Page Include="src\InventoryEditing\ItemView.xaml" />
+    <Page Include="src\InventoryEditing\ItemDescriptionView.xaml" />
+    <Page Include="src\InventoryEditing\SlotView.xaml" />
     <Page Include="src\InvestigationEditing\Boxstore.xaml" />
     <Page Include="src\InvestigationEditing\InvestigationView.xaml" />
     <Page Include="Tabs\GeneralTab.xaml" />

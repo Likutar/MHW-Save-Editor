@@ -35,8 +35,9 @@ namespace MHW_Save_Editor
         private void OpenFunction(object sender, RoutedEventArgs e)
         {
             open = true;
-            string steamPath = Utility.getSteamPath();
-
+            string steamPath;
+            try{steamPath = Utility.getSteamPath();}
+            catch{steamPath = "C:";}
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = steamPath;
             openFileDialog.ShowDialog();

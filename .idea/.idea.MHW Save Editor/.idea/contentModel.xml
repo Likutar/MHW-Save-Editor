@@ -41,12 +41,16 @@
           </e>
           <e p="InventoryEditing" t="Include">
             <e p="Inventory.cs" t="Include" />
+            <e p="InventoryAreas.xaml" t="Include" />
+            <e p="InventoryAreas.xaml.cs" t="Include" />
             <e p="InventoryContentsView.xaml" t="Include" />
             <e p="InventoryContentsView.xaml.cs" t="Include" />
             <e p="InventoryView.xaml" t="Include" />
             <e p="InventoryView.xaml.cs" t="Include" />
-            <e p="ItemView.xaml" t="Include" />
-            <e p="ItemView.xaml.cs" t="Include" />
+            <e p="ItemDescriptionView.xaml" t="Include" />
+            <e p="ItemDescriptionView.xaml.cs" t="Include" />
+            <e p="SlotView.xaml" t="Include" />
+            <e p="SlotView.xaml.cs" t="Include" />
           </e>
           <e p="InvestigationEditing" t="Include">
             <e p="Boxstore.xaml" t="Include" />

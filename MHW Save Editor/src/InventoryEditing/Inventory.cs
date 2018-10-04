@@ -30,7 +30,7 @@ namespace MHW_Save_Editor.InventoryEditing
             get => _item;
             set
             {
-                if (value == SingletonMasterItemList.Instance.EmptyItem())
+                if (value.Default)//Should be any special item and the item should be checking it's own minima and maxima
                 {
                     _amount = 0;
                     RaisePropertyChanged("Amount");
@@ -137,5 +137,18 @@ namespace MHW_Save_Editor.InventoryEditing
         public bool Deliverable { get => (flags&(0x1<<11))!=0x0;}
         public bool PouchVisible { get => (flags&(0x1<<12))!=0x0;}
         //public bool Unknown { get => (flags&(0x1<<13))!=0x0;}...
+
+        private static readonly string _StarIconPath = "";
+        private static readonly string _EmptyIcon = "";
+        public bool CanIncrease { get => Default;}
+        public string StarPath { get => Mega?_StarIconPath:_EmptyIcon;}
+        public bool Level { get => Level1 || Level2 || Level3;}
+        public string LevelPath { get => Level? (Level3?"Level3Path":(Level2?"Level2Path":"Level1Path")) : _EmptyIcon;}
+            //TODO - Set the correct paths
+        public string ItemImagePath {get => ""+iconID+"_"+iconColor+".png";}
+            //TODO - Set the correct paths
+        public int MinCount { get => Default?0:1;}
+        public int MaxCount { get => Default?0:2<<31; }
+
     }
 }
