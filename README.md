@@ -5,12 +5,12 @@ We are currently looking for code writers to implement additional sections that 
 This is a MHW Save Editor. For the time being it allows changing the steam id (in case you want to use someone else's save) and editing the investigation list.  
   
 Credit to:  
-nerxusphobiker - For figuring out the encryption function location in memory and having the first decrypter.  
+nexusphobiker - For figuring out the encryption function location in memory and having the first decrypter.  
 legendff and Count Lizzie - For figuring out the encryption algorithm and the checksum.  
 legendff - For getting all of the encryption keys from memory.  
 Pascal/Ambytes - For writing the C# decryptor and checksum.  
 AsteriskAmpersand - For rewriting the base GUI to support a complete editor, doing the save file investigation structure and investigation editor portion.  
-Kaito - For helping testing and debugging the investigation editor and the new GUI.  
+Kaito - For helping testing and debugging the investigation editor and the new GUI. Also responsible for the backup and restore functionality.
 goose - For the appearance struct.  
 V00d00y - For almost every other structure in the save files not found by the previously listed.  
 V00d00y and Stratas - For robustness testing and the second for help with profiling performances.
