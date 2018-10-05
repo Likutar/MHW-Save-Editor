@@ -122,7 +122,11 @@
     <Compile Include="src\FileFormat\GenericFile.cs" />
     <Compile Include="src\FileFormat\SaveFile.cs" />
     <Compile Include="src\InventoryEditing\Inventory.cs" />
+    <Compile Include="src\InventoryEditing\InventoryArea.cs" />
     <Compile Include="src\InventoryEditing\InventoryAreas.xaml.cs">
+      <DependentUpon>InventoryAreas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\InventoryEditing\InventoryAreasViewModel.cs">
       <DependentUpon>InventoryAreas.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">

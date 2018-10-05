@@ -17,7 +17,7 @@
             <local:InventoryContentsView/>
         </ContentControl>
         <ContentControl Name="ItemContents" Grid.Row="1">
-            <local:ItemView/>
+            <local:ItemDescriptionView/>
         </ContentControl>        
     </Grid>
 </UserControl>

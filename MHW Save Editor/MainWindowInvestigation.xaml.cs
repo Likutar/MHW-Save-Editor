@@ -42,7 +42,7 @@ namespace MHW_Save_Editor
       
         private static string[] InvestigationList_EditMenu = new[]
         {
-            "Copy", "Paste", "Paste At", "Commit All", "Sort", "Filter"
+            "Copy", "Paste", "Paste At", "Commit All", "Max All", "Sort", "Filter"
         };
 
         private void InvestigationsEditHandler(string command)
@@ -66,6 +66,9 @@ namespace MHW_Save_Editor
                     break;
                 case("Commit All"):
                     Commit();
+                    break;
+                case("Max All"):
+                    MaxAll();
                     break;
                 case("Sort"):
                     Func<Investigation,IEnumerable<int> > sorter = PromptInvestigationsSorter();
@@ -171,6 +174,12 @@ namespace MHW_Save_Editor
                         "InvestigationCollectionView"]).SourceCollection)
                     [i].Serialize().CopyTo(saveFile.data, Investigation.inv_offsets[0]+i*Investigation.inv_size);
             }
+        }
+
+        private void MaxAll()
+        {
+            foreach (Investigation inv in ((IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
+                "InvestigationCollectionView"]).SourceCollection)) inv.Attempts = 10;
         }
 
         private void ReSort(Func<Investigation, IEnumerable<int>> sorterer = null)

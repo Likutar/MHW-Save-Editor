@@ -33,6 +33,11 @@
                     </Grid>
                 </TabItem>
                 <!-- Inventory ================================================================================-->
+                <TabItem Header="Inventory">
+                    <Grid>
+                        <ContentControl Name="InventoryTabControl"/>
+                    </Grid>
+                </TabItem>
             </TabControl>
         </Grid>
     </DockPanel>

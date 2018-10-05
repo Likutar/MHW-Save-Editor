@@ -41,8 +41,10 @@
           </e>
           <e p="InventoryEditing" t="Include">
             <e p="Inventory.cs" t="Include" />
+            <e p="InventoryArea.cs" t="Include" />
             <e p="InventoryAreas.xaml" t="Include" />
             <e p="InventoryAreas.xaml.cs" t="Include" />
+            <e p="InventoryAreasViewModel.cs" t="Include" />
             <e p="InventoryContentsView.xaml" t="Include" />
             <e p="InventoryContentsView.xaml.cs" t="Include" />
             <e p="InventoryView.xaml" t="Include" />

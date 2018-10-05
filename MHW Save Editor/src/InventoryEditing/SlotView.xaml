@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>   
         <Image Source="{Binding Item/StarPath}" Grid.Row="0" Grid.Column="0" Visibility="{Binding Item/Mega}"/>
         <Image Source="{Binding Item/LevelPath}" Grid.Row="1" Grid.Column="0" Visibility="{Binding Item/Level}"/>
-        <Image Source="{Binding Item/ItemImagePath}" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2"/>
+        <Image Source="{Binding Item/ItemImagePath}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
         <xctk:IntegerUpDown Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
                             Minimum="{Binding Item/MinCount}" Maximum="{Binding Item/MaxCount}" 
                             HorizontalAlignment="Right"
