@@ -15,6 +15,7 @@
         <e p="MainWindow.xaml" t="Include" />
         <e p="MainWindow.xaml.cs" t="Include" />
         <e p="MainWindowGeneral.xaml.cs" t="Include" />
+        <e p="MainWindowInventory.cs" t="Include" />
         <e p="MainWindowInvestigation.xaml.cs" t="Include" />
         <e p="MainWindowPrompts.xaml.cs" t="Include" />
         <e p="MHW Save Editor.csproj" t="IncludeRecursive" />

@@ -74,7 +74,7 @@ namespace MHW_Save_Editor.InventoryEditing
         {
             List<Item> Listing = 
             JsonConvert.DeserializeObject<List<Item>>(
-                File.ReadAllText("./src/InventoryEditing/MasterItemList.json"));
+                File.ReadAllText("./src/Resources/MasterItemList.json"));
             ItemList = new Dictionary<UInt32, Item>();
             foreach (Item _item in Listing) ItemList.Add(_item.id,_item);
         }
@@ -99,12 +99,13 @@ namespace MHW_Save_Editor.InventoryEditing
     //Type: 0=Item, 1=Material, 2=Account Item, 3=Ammo/Coating, 4=Decoration
     public class ItemList
     {
+        
         private readonly Dictionary<UInt32, Item> Items;
         private readonly ObservableCollection<Item> Manifest;
         private ItemList(UInt32 Type)
         {
             Items =
-            SingletonMasterItemList.Instance.ItemList.Where(s => s.Value.type == Type || s.Value.id == 0x0)
+            SingletonMasterItemList.Instance.ItemList.Where(s => (s.Value.storageID==Type && !s.Value.Default)|| s.Value.id == 0x0)
                 .ToDictionary(dict => dict.Key, dict => dict.Value);
             Manifest = new ObservableCollection<Item>(Items.Values);
         }
@@ -140,7 +141,7 @@ namespace MHW_Save_Editor.InventoryEditing
         public string name { get; set; }
         public string description { get; set; }
         public Byte  subType  { get; set; }
-        public UInt32 type { get; set; }
+        public UInt32 storageID { get; set; }
         public Byte rarity  { get; set; }
         public Byte carryLimit  { get; set; }
         public Byte  unk  { get; set; }

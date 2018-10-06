@@ -20,7 +20,7 @@ namespace MHW_Save_Editor.InventoryEditing
             }
             public InventoryAreasViewModel()
             {
-                InventoryAreaCollectionView = Application.Current.Resources["InvestigationCollectionView"] as ListCollectionView;
+                InventoryAreaCollectionView = Application.Current.Resources["InventoryAreaCollectionView"] as ListCollectionView;
                 InventoryAreaCollectionView.MoveCurrentToPosition(1);
             }
     }

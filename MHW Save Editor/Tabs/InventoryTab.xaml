@@ -11,11 +11,11 @@
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="6*" />
                 </Grid.ColumnDefinitions>
-                <ContentControl Name="InvestigationListing" Grid.Column="0">
+                <ContentControl Name="InventoryAreas" Grid.Column="0">
                     <local:InventoryAreas/>
                 </ContentControl>
                 <GridSplitter Grid.Column="0"  Height="Auto" Width="5" VerticalAlignment="Stretch"></GridSplitter>
-                <ContentControl Name="InvestigationDisplay" Grid.Column="1">
+                <ContentControl Name="InventoryAreaDisplay" Grid.Column="1">
                     <local:InventoryView/>
                 </ContentControl>
             </Grid>

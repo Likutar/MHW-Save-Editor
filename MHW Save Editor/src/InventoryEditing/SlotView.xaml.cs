@@ -2,9 +2,9 @@ using System.Windows.Controls;
 
 namespace MHW_Save_Editor.InventoryEditing
 {
-    public partial class ItemView : UserControl
+    public partial class  SlotView : UserControl
     {
-        public ItemView()
+        public SlotView()
         {
             InitializeComponent();
         }

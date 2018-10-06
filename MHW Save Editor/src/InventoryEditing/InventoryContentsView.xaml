@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding }" >
+        <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding InventoryAreaCollectionView/SlotList}" >
             <ItemsControl.ItemsPanel>
                 <!-- specify the panel that is the container for the items -->
                 <ItemsPanelTemplate>
@@ -18,7 +18,9 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <!-- How to display each "inventory slot of the collection" -->
-                    <TextBox Text="{Binding Path=., UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <ContentControl>
+                        <local:SlotView/>
+                    </ContentControl>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

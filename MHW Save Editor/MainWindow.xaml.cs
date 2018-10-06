@@ -59,6 +59,7 @@ namespace MHW_Save_Editor
             GeneralTabControl.OnFileChecksum = "ChecksumGenerated: " + BitConverter.ToString(saveFile.GenerateChecksum()).Replace("-", "");
             GeneralTabControl.FilePath = openFileDialog.FileName;
             InvestigationsTabControl.Content = PopulateInvestigations(saveFile.data);
+            InventoryTabControl.Content = PopulateInventory(saveFile.data);
         }
 
         private void SaveFunction(object sender, RoutedEventArgs e)

@@ -9,7 +9,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <!-- Box Contents -->
-            <RowDefinition Height="5*" />
+            <RowDefinition Height="4*" />
             <!-- Item Description -->
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
