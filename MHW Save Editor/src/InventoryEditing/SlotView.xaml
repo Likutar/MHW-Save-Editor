@@ -17,14 +17,21 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>   
-        <Image Source="{Binding Item/StarPath}" Grid.Row="0" Grid.Column="0" Visibility="{Binding Item/Mega}"/>
-        <Image Source="{Binding Item/LevelPath}" Grid.Row="1" Grid.Column="0" Visibility="{Binding Item/Level}"/>
-        <Image Source="{Binding Item/ItemImagePath}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image Source="{Binding Item.StarPath}" Grid.Row="0" Grid.Column="0" Visibility="{Binding Item.Mega}"/>
+        <Image Source="{Binding Item.LevelPath}" Grid.Row="1" Grid.Column="0" Visibility="{Binding Item.Level}"/>
+        <xctk:DropDownButton Margin="15"  Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <xctk:DropDownButton.Content>
+                <Image Source="{Binding Item.ItemImagePath}"/>
+            </xctk:DropDownButton.Content>
+            <xctk:DropDownButton.DropDownContent>
+                <local:ItemDescriptionView Height="130" Width="300"/>
+            </xctk:DropDownButton.DropDownContent>
+        </xctk:DropDownButton>
         <xctk:IntegerUpDown Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
-                            Minimum="{Binding Item/MinCount}" Maximum="{Binding Item/MaxCount}" 
+                            Minimum="{Binding Item.MinCount}" Maximum="{Binding Item.MaxCount}" 
                             HorizontalAlignment="Right"
                             Value = "{Binding Amount, 
                             UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
-                            IsEnabled="{Binding Item/CanIncrease}"/>
+                            IsEnabled="{Binding Item.CanIncrease}"/>
        </Grid>
 </UserControl>

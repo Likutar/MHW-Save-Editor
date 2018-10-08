@@ -51,32 +51,32 @@ namespace MHW_Save_Editor
             switch (command)
             {
                 case("Copy"):
-                    Copy();
+                    CopyInvestigations();
                     break;
                 case("Paste"):
                     if (_clipboard != null)
-                        Paste();
+                        PasteInvestigations();
                     break;
                 case("Paste At"):
                     if (_clipboard != null)
                     {
                         List<int> positions = PromptPositions();
-                        PasteAt(positions);
+                        PasteAtInvestigations(positions);
                     }
                     break;
                 case("Commit All"):
-                    Commit();
+                    CommitInvestigations();
                     break;
                 case("Max All"):
-                    MaxAll();
+                    MaxAllInvestigations();
                     break;
                 case("Sort"):
                     Func<Investigation,IEnumerable<int> > sorter = PromptInvestigationsSorter();
-                    ReSort(sorter);//sorter);
+                    ReSortInvestigations(sorter);//sorter);
                     break;
                 case("Filter"):
                     Func<Investigation,bool > filterer = PromptInvestigationsFilter();
-                    ClearAll(filterer);
+                    ClearAllInvestigations(filterer);
                     break;
                 default:
                     return;
@@ -144,20 +144,20 @@ namespace MHW_Save_Editor
             return ((ListCollectionView) Application.Current.Resources["InvestigationCollectionView"]).CurrentPosition;
         }
 
-        private void Copy()
+        private void CopyInvestigations()
         {
             _clipboard = (Investigation) ((ListCollectionView) Application.Current.Resources["InvestigationCollectionView"]).CurrentItem;
         }
 
-        private void Paste()
+        private void PasteInvestigations()
         {
-            PasteAt(new List<int>(new []
+            PasteAtInvestigations(new List<int>(new []
                 {((ListCollectionView) Application.Current.Resources["InvestigationCollectionView"]).CurrentPosition+1}
             ));
 
         }
     
-        private void PasteAt(List<int> positions)
+        private void PasteAtInvestigations(List<int> positions)
         {
             foreach (int j in positions){
                 ((IList<Investigation>)((ListCollectionView) Application.Current.Resources["InvestigationCollectionView"]).SourceCollection)
@@ -166,7 +166,7 @@ namespace MHW_Save_Editor
             }
         }
     
-        private void Commit()
+        private void CommitInvestigations()
         {
             for (int i = 0; i < Investigation.inv_number; i++)
             {
@@ -176,13 +176,13 @@ namespace MHW_Save_Editor
             }
         }
 
-        private void MaxAll()
+        private void MaxAllInvestigations()
         {
             foreach (Investigation inv in ((IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
                 "InvestigationCollectionView"]).SourceCollection)) inv.Attempts = 10;
         }
 
-        private void ReSort(Func<Investigation, IEnumerable<int>> sorterer = null)
+        private void ReSortInvestigations(Func<Investigation, IEnumerable<int>> sorterer = null)
         {
             IList<Investigation> list = (IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
                 "InvestigationCollectionView"]).SourceCollection;
@@ -215,7 +215,7 @@ namespace MHW_Save_Editor
             }
         }
 
-        private void ClearAll(Func<Investigation, bool> filter)
+        private void ClearAllInvestigations(Func<Investigation, bool> filter)
         {
             IList<Investigation> list = (IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
                 "InvestigationCollectionView"]).SourceCollection;
@@ -232,7 +232,7 @@ namespace MHW_Save_Editor
                         }
                     }
 
-                    ReSort();
+                    ReSortInvestigations();
                 }
                 catch
                 {

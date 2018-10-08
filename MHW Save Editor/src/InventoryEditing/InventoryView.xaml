@@ -10,14 +10,14 @@
         <Grid.RowDefinitions>
             <!-- Box Contents -->
             <RowDefinition Height="4*" />
-            <!-- Item Description -->
-            <RowDefinition Height="1*" />
+            <!-- Item Description >
+            <RowDefinition Height="1*" /-->
         </Grid.RowDefinitions>
         <ContentControl Name="InventoryContents" Grid.Row="0">
             <local:InventoryContentsView/>
         </ContentControl>
-        <ContentControl Name="ItemContents" Grid.Row="1">
+        <!--ContentControl Name="ItemContents" Grid.Row="1">
             <local:ItemDescriptionView/>
-        </ContentControl>        
+        </ContentControl-->        
     </Grid>
 </UserControl>

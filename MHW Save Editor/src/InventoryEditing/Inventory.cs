@@ -34,6 +34,11 @@ namespace MHW_Save_Editor.InventoryEditing
                     _amount = 0;
                     RaisePropertyChanged("Amount");
                 }
+                else if (_amount == 0)
+                {
+                    _amount = 1;
+                    RaisePropertyChanged("Amount");
+                }
                 _item = value;
                 RaisePropertyChanged();
             } 
@@ -63,7 +68,7 @@ namespace MHW_Save_Editor.InventoryEditing
         
         public byte[] Serialize()
         {
-            return BitConverter.GetBytes(_item.id).Concat(BitConverter.GetBytes(_amount)).ToArray();
+            return BitConverter.GetBytes(_item.id).Concat(BitConverter.GetBytes(_amount)).ToArray();;
         }
     }
     
@@ -137,6 +142,11 @@ namespace MHW_Save_Editor.InventoryEditing
     
     public class Item
     {
+        public override string ToString()
+        {
+            return name;
+        }
+
         public UInt32 id  { get; set; }
         public string name { get; set; }
         public string description { get; set; }
@@ -170,7 +180,7 @@ namespace MHW_Save_Editor.InventoryEditing
 
         private static readonly string _StarIconPath = "";
         private static readonly string _EmptyIcon = "";
-        public bool CanIncrease { get => Default;}
+        public bool CanIncrease { get => !Default && id != 0;}
         public string StarPath { get => Mega?_StarIconPath:_EmptyIcon;}
         public bool Level { get => Level1 || Level2 || Level3;}
         public string LevelPath { get => Level? (Level3?"Level3Path":(Level2?"Level2Path":"Level1Path")) : _EmptyIcon;}
@@ -178,7 +188,7 @@ namespace MHW_Save_Editor.InventoryEditing
         public string ItemImagePath {get => ""+iconID+"_"+iconColor+".png";}
             //TODO - Set the correct paths
         public int MinCount { get => Default?0:1;}
-        public int MaxCount { get => Default?0:2<<31; }
+        public int MaxCount { get => Default?0:9999; }
 
     }
 }

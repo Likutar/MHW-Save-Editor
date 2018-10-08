@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Data;
 using MHW_Save_Editor.InventoryEditing;
@@ -13,10 +14,10 @@ namespace MHW_Save_Editor
     {
         private int PlayerOffset = 0x3004DC;
         private int PlayerOffsetEnd = 0x3F65EB;
-        public object PopulateInventory(byte[] newdata)
+        public object PopulateInventory(byte[] savefile)
         {
             List<InventoryArea> inv = GetInventoryAreas(
-                newdata.Slice(PlayerOffset, PlayerOffsetEnd));
+                savefile.Slice(PlayerOffset, PlayerOffsetEnd));
             ObservableCollection<InventoryArea> inventory = new ObservableCollection<InventoryArea>(inv);
             ListCollectionView inventoryAreaCollectionView = (ListCollectionView)new CollectionViewSource { Source = inventory }.View;
             Application.Current.Resources["InventoryAreaCollectionView"] = inventoryAreaCollectionView;
@@ -31,5 +32,16 @@ namespace MHW_Save_Editor
             
             return inv;
         }
+
+        public void CommitInventory()
+        {
+            IList<InventoryArea> source = (IList<InventoryArea>) ((ListCollectionView) Application.Current.Resources["InventoryAreaCollectionView"])
+                .SourceCollection;
+            foreach ((var Area, var Properties) in source.Zip(InventoryArea.AreaSet, (i1, i2) => (i1, i2)))
+            {
+                Area.Serialize().ToArray().CopyTo(saveFile.data, PlayerOffset+Properties.localoffset);
+            }
+        }
+        
     }
 }

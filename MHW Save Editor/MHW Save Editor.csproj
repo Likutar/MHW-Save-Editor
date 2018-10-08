@@ -120,6 +120,7 @@
     <Compile Include="MainWindowPrompts.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MoreLinq\MoreEnumerable.Zip.cs" />
     <Compile Include="src\Crypto\Blowfish.cs" />
     <Compile Include="src\Data\NotifyUIBase.cs" />
     <Compile Include="src\FileFormat\GenericFile.cs" />
@@ -135,6 +136,9 @@
       <DependentUpon>InventoryAreas.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">
+      <DependentUpon>InventoryContentsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\InventoryEditing\InventoryContentsViewModel.cs">
       <DependentUpon>InventoryContentsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryView.xaml.cs">

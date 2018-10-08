@@ -19,6 +19,9 @@
         <e p="MainWindowInvestigation.xaml.cs" t="Include" />
         <e p="MainWindowPrompts.xaml.cs" t="Include" />
         <e p="MHW Save Editor.csproj" t="IncludeRecursive" />
+        <e p="MoreLinq" t="Include">
+          <e p="MoreEnumerable.Zip.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
@@ -48,6 +51,7 @@
             <e p="InventoryAreasViewModel.cs" t="Include" />
             <e p="InventoryContentsView.xaml" t="Include" />
             <e p="InventoryContentsView.xaml.cs" t="Include" />
+            <e p="InventoryContentsViewModel.cs" t="Include" />
             <e p="InventoryView.xaml" t="Include" />
             <e p="InventoryView.xaml.cs" t="Include" />
             <e p="ItemDescriptionView.xaml" t="Include" />

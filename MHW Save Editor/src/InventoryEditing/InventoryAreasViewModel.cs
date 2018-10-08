@@ -15,7 +15,6 @@ namespace MHW_Save_Editor.InventoryEditing
                 {
                     InventoryAreaCollectionView.MoveCurrentTo(value);
                     RaisePropertyChanged();
-
                 }
             }
             public InventoryAreasViewModel()

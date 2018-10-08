@@ -4,25 +4,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:MHW_Save_Editor.InventoryEditing"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding InventoryAreaCollectionView/SlotList}" >
-            <ItemsControl.ItemsPanel>
-                <!-- specify the panel that is the container for the items -->
-                <ItemsPanelTemplate>
-                    <UniformGrid Rows="10" Columns="10" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <!-- specify the template used to render each item -->
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <!-- How to display each "inventory slot of the collection" -->
-                    <ContentControl>
-                        <local:SlotView/>
-                    </ContentControl>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" >
+            <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding InventoryAreaCollectionView/SlotList}">
+                <ItemsControl.ItemsPanel>
+                    <!-- specify the panel that is the container for the items -->
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="10" Columns="10" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <!-- specify the template used to render each item -->
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <!-- How to display each "inventory slot of the collection" -->
+                        <ContentControl>
+                            <local:SlotView/>
+                        </ContentControl>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </UserControl>

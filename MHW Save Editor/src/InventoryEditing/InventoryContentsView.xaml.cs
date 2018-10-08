@@ -7,6 +7,10 @@ namespace MHW_Save_Editor.InventoryEditing
         public InventoryContentsView()
         {
             InitializeComponent();
+            if (!System.ComponentModel.DesignerProperties.GetIsInDesignMode(this))
+            {
+                this.DataContext = new InventoryContentsViewModel();
+            }
         }
     }
 }
