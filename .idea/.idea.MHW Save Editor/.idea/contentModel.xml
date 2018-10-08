@@ -68,6 +68,7 @@
             <e p="InvestigationView.xaml" t="Include" />
             <e p="InvestigationView.xaml.cs" t="Include" />
             <e p="InvestigationViewModel.cs" t="Include" />
+            <e p="MonsterIconConverter.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="Icon" t="Include">
@@ -501,6 +502,40 @@
               <e p="star.png" t="Include" />
             </e>
             <e p="MasterItemList.json" t="Include" />
+            <e p="MonsterIcons" t="Include">
+              <e p="Anjanath.png" t="Include" />
+              <e p="Azure Rathalos.png" t="Include" />
+              <e p="Barroth.png" t="Include" />
+              <e p="Bazelgeuse.png" t="Include" />
+              <e p="Behemoth.png" t="Include" />
+              <e p="Black Diablos.png" t="Include" />
+              <e p="Deviljho.png" t="Include" />
+              <e p="Diablos.png" t="Include" />
+              <e p="Dodogama.png" t="Include" />
+              <e p="Great Girros.png" t="Include" />
+              <e p="Great Jagras.png" t="Include" />
+              <e p="Jyuratodus.png" t="Include" />
+              <e p="Kirin.png" t="Include" />
+              <e p="Kulu-Ya-Ku.png" t="Include" />
+              <e p="Kushala Daora.png" t="Include" />
+              <e p="Lavasioth.png" t="Include" />
+              <e p="Legiana.png" t="Include" />
+              <e p="Lunastra.png" t="Include" />
+              <e p="Nergigante.png" t="Include" />
+              <e p="Odogaron.png" t="Include" />
+              <e p="Paolumu.png" t="Include" />
+              <e p="Pink Rathian.png" t="Include" />
+              <e p="Pukei-Pukei.png" t="Include" />
+              <e p="question_ID copy.png" t="Include" />
+              <e p="Radobaan.png" t="Include" />
+              <e p="Rathalos.png" t="Include" />
+              <e p="Rathian.png" t="Include" />
+              <e p="Teostra.png" t="Include" />
+              <e p="Tobi-Kadachi.png" t="Include" />
+              <e p="Tzitzi-Ya-Ku.png" t="Include" />
+              <e p="Uragaan.png" t="Include" />
+              <e p="Vaal Hazak.png" t="Include" />
+            </e>
             <e p="ResourcesDictionary.xaml" t="Include" />
           </e>
           <e p="Support" t="Include">

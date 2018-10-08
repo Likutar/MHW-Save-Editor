@@ -2,8 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Windows.Data;
 using MHW_Save_Editor.Data;
 
 
@@ -467,7 +471,7 @@ namespace MHW_Save_Editor.InvestigationEditing
             {0x1f,22},{0x20,23},{0x21,24},{0x22,25},{0x23,26},{0x24,27},{0x25,28},{0x27,29},{0xffffffff,30}
         };
 
-        private static readonly string[] _MonsterNames = new[]
+        public static readonly string[] _MonsterNames = new[]
         {
             "Anjanath", "Rathalos", "Great Jagras", "Rathian", "Pink Rathian", "Azure Rathalos",
             "Diablos", "Black Diablos", "Kirin", "Kushala Daora", "Lunastra", "Teostra",
@@ -476,7 +480,7 @@ namespace MHW_Save_Editor.InvestigationEditing
             "Legiana", "Great Girros", "Odogaron", "Radobaan", "Vaal Hazak", "Dodogama",
             "Bazelgeuse", "Empty"
         };
-        
+
         public ObservableCollection<string> MonsterNames
         {
             get => new ObservableCollection<string>(_MonsterNames);

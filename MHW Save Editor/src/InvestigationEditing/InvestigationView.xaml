@@ -4,10 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MHW_Save_Editor"
+             xmlns:converter="clr-namespace:MHW_Save_Editor.InvestigationEditing"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+	<UserControl.Resources>
+		<converter:MonsterIconConverter x:Key="MonsterIconConverter"/>
+	</UserControl.Resources>
+	<Grid>
         <Grid.RowDefinitions>
             <!-- State Controls -->
             <RowDefinition Height="1*" />
@@ -72,6 +76,9 @@
 				<ColumnDefinition Width="1*" />
 				<ColumnDefinition Width="1*" />
 			</Grid.ColumnDefinitions>
+			<Image Grid.Row="0" Grid.Column="0" Source = "{Binding InvestigationCollectionView/Mon1, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}" />
+			<Image Grid.Row="0" Grid.Column="1" Source = "{Binding InvestigationCollectionView/Mon2, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}"/>
+			<Image Grid.Row="0" Grid.Column="2" Source = "{Binding InvestigationCollectionView/Mon3, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}"/>
 			<Grid Grid.Row="1" Grid.Column="0">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="1*" />
@@ -208,8 +215,8 @@
 			<xctk:IntegerUpDown Grid.Column="1"  Grid.Row="5" Minimum="1" Maximum="10"  AllowTextInput = "False"
 			                    Value = "{Binding InvestigationCollectionView/Attempts, UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
 			                    IsEnabled="{Binding InvestigationCollectionView/Filled}"/>
-			<TextBlock Grid.Column="0" Grid.Row="6" Style="{StaticResource InvestigationLabel}">Y0: </TextBlock>
-			<xctk:IntegerUpDown Grid.Column="1" Grid.Row="6" Minimum="0" Maximum="5" AllowTextInput = "False"
+			<TextBlock Grid.Column="0" Grid.Row="6" Style="{StaticResource InvestigationLabel}">Wildlife Extra Boxes: </TextBlock>
+			<xctk:IntegerUpDown Grid.Column="1" Grid.Row="6" Minimum="0" Maximum="2" AllowTextInput = "False"
 			                    Value = "{Binding InvestigationCollectionView/Y0, UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
 			                    IsEnabled="{Binding InvestigationCollectionView/Filled}"/>
 			<TextBlock Grid.Column="0" Grid.Row="7" Style="{StaticResource InvestigationLabel}">Y3: </TextBlock>
