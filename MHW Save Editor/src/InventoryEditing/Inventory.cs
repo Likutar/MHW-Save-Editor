@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Data;
 using System.Windows.Media;
 using MHW_Save_Editor.Data;
@@ -52,7 +53,6 @@ namespace MHW_Save_Editor.InventoryEditing
         {
             _type = type;
             _slotchoices = ItemList.TypeToListing(type);
-            //TODO - Generate view for the correct type from one of the fixed Item list of the type
             
             if (amount == 0 || item == 0)
             {
@@ -79,7 +79,7 @@ namespace MHW_Save_Editor.InventoryEditing
         {
             List<Item> Listing = 
             JsonConvert.DeserializeObject<List<Item>>(
-                File.ReadAllText("./src/Resources/MasterItemList.json"));
+                File.ReadAllText(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)+@"/src/Resources/MasterItemList.json"));
             ItemList = new Dictionary<UInt32, Item>();
             foreach (Item _item in Listing) ItemList.Add(_item.id,_item);
         }
@@ -178,17 +178,19 @@ namespace MHW_Save_Editor.InventoryEditing
         public bool PouchVisible { get => (flags&(0x1<<12))!=0x0;}
         //public bool Unknown { get => (flags&(0x1<<13))!=0x0;}...
 
-        private static readonly string _StarIconPath = "";
-        private static readonly string _EmptyIcon = "";
+        private static readonly string _imageRoot =
+            Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)+@"/src/Resources/ItemIcons/";
+        private static readonly string _StarIconPath = "star.png";
+        private static readonly string _EmptyIcon = "255_0.png";
         public bool CanIncrease { get => !Default && id != 0;}
-        public string StarPath { get => Mega?_StarIconPath:_EmptyIcon;}
+        public string StarPath { get => _imageRoot+(Mega?_StarIconPath:_EmptyIcon);}
         public bool Level { get => Level1 || Level2 || Level3;}
-        public string LevelPath { get => Level? (Level3?"Level3Path":(Level2?"Level2Path":"Level1Path")) : _EmptyIcon;}
-            //TODO - Set the correct paths
-        public string ItemImagePath {get => ""+iconID+"_"+iconColor+".png";}
-            //TODO - Set the correct paths
+        public string LevelPath { get => _imageRoot+(Level? (Level3?"lvl3.png":(Level2?"lvl2.png":"lvl1.png")) : _EmptyIcon);}
+        public string ItemImagePath {get => _imageRoot+iconID+"_"+iconColor+".png";}
         public int MinCount { get => Default?0:1;}
         public int MaxCount { get => Default?0:9999; }
+        public byte DisplayRarity { get=> (byte)(rarity+1);}
+        public string DisplayPrice { get=> sellPrice+"z";}
 
     }
 }

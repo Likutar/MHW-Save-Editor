@@ -7,31 +7,49 @@
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="2*" />
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>   
-        <Image Source="{Binding Item.StarPath}" Grid.Row="0" Grid.Column="0" Visibility="{Binding Item.Mega}"/>
-        <Image Source="{Binding Item.LevelPath}" Grid.Row="1" Grid.Column="0" Visibility="{Binding Item.Level}"/>
-        <xctk:DropDownButton Margin="15"  Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+        <xctk:DropDownButton Grid.Row="0" Background="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <xctk:DropDownButton.Content>
-                <Image Source="{Binding Item.ItemImagePath}"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>   
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="6*" />
+                    </Grid.ColumnDefinitions>   
+                    <Image Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"
+                           Source="{Binding Item.ItemImagePath}" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="{Binding Item.StarPath}" Grid.Row="0" Grid.Column="0" Visibility="{Binding Item.Mega, Converter={StaticResource BoolToVis}}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="{Binding Item.LevelPath}" Grid.Row="1" Grid.Column="0" Visibility="{Binding Item.Level, Converter={StaticResource BoolToVis}}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Text = "{Binding Item.name}" TextWrapping="WrapWithOverflow"
+                               TextTrimming="CharacterEllipsis" LineHeight="2"
+                               HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10"/>
+                </Grid>
             </xctk:DropDownButton.Content>
             <xctk:DropDownButton.DropDownContent>
                 <local:ItemDescriptionView Height="130" Width="300"/>
             </xctk:DropDownButton.DropDownContent>
         </xctk:DropDownButton>
-        <xctk:IntegerUpDown Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+        <xctk:IntegerUpDown Grid.Row="1"
                             Minimum="{Binding Item.MinCount}" Maximum="{Binding Item.MaxCount}" 
-                            HorizontalAlignment="Right"
+                            HorizontalAlignment="Stretch"
                             Value = "{Binding Amount, 
                             UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
-                            IsEnabled="{Binding Item.CanIncrease}"/>
+                            IsEnabled="{Binding Item.CanIncrease}"
+                            
+                            />
        </Grid>
 </UserControl>

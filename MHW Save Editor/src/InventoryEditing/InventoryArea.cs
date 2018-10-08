@@ -9,7 +9,6 @@ namespace MHW_Save_Editor.InventoryEditing
     public class InventoryArea
     {
         public ListCollectionView SlotList { get; set; }
-        private int _type;
         private string _areaname;
         public override string ToString()
         {
@@ -17,7 +16,6 @@ namespace MHW_Save_Editor.InventoryEditing
         }
         public InventoryArea(byte[] inventoryslice, int type, string areaname)
         {
-            _type = 0;
             _areaname = areaname;
             int size = inventoryslice.Length / 8;
             uint itemcode;
@@ -49,7 +47,7 @@ namespace MHW_Save_Editor.InventoryEditing
             (0xa2d39, 16, 3, "Ammo Pouch"),
             (0xa2ed9, 200, 0, "Item Box"),
             (0xa3519, 200, 3, "Ammo Box"),
-            (0xa3b59, 200, 1, "Material Box"),
+            (0xa3b59, 800, 1, "Material Box"),
             (0xa5459, 200, 4, "Deco Box")
         };
 
