@@ -60,17 +60,24 @@
             <e p="SlotView.xaml.cs" t="Include" />
           </e>
           <e p="InvestigationEditing" t="Include">
+            <e p="BoxIconConverter.cs" t="Include" />
             <e p="Boxstore.xaml" t="Include" />
             <e p="Boxstore.xaml.cs" t="Include" />
             <e p="BoxstoreViewModel.cs" t="Include" />
             <e p="Investigation.cs" t="Include" />
-            <e p="InvestigationThinLayer.cs" t="Include" />
             <e p="InvestigationView.xaml" t="Include" />
             <e p="InvestigationView.xaml.cs" t="Include" />
             <e p="InvestigationViewModel.cs" t="Include" />
             <e p="MonsterIconConverter.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
+            <e p="BoxIcons" t="Include">
+              <e p="0.png" t="Include" />
+              <e p="1.png" t="Include" />
+              <e p="2.png" t="Include" />
+              <e p="3.png" t="Include" />
+              <e p="4.png" t="Include" />
+            </e>
             <e p="Icon" t="Include">
               <e p="monhan_fw_F6x_icon.ico" t="Include" />
             </e>

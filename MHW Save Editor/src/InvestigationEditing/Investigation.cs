@@ -19,19 +19,176 @@ namespace MHW_Save_Editor.InvestigationEditing
 
         public Investigation(byte[] newdata=null)
         {
-            if (newdata == null) newdata = InvestigationThinLayer.nullinvestigation;
+            if (newdata == null) newdata = nullinvestigation;
             byte[] newish = new byte[inv_size];
             Array.Copy(newdata, 0, newish, 0, inv_size);
-            _underlyingInvestigationThinLayer = new InvestigationThinLayer(newish);
+            _underlyingData = newish;
         }
 
-        private InvestigationThinLayer _underlyingInvestigationThinLayer;
+        private byte[] _underlyingData;
 
+    #region Thinlayer
+        #region Members
+        private static readonly byte[] questIsFilled = {0x30, 0x75, 0x00, 0x00};
+        private bool _Filled
+        {
+            get => _underlyingData.Slice(0, 4).SequenceEqual(questIsFilled);
+        }
+        private bool _Selected
+        {
+            get => _underlyingData[4] != 0x00;
+            set => _underlyingData[4] = (byte)(value ? 0x01 : 0x00);
+        }
+        private Int32 _Attempts
+        {
+            get => BitConverter.ToInt32(_underlyingData.Slice(5, 9),0);
+            set => Array.Copy(BitConverter.GetBytes(value), 0, _underlyingData, 5, 4);
+        }
+        private bool _Seen
+        {
+            get => BitConverter.ToInt32(_underlyingData.Slice(9, 13),0)==3;
+            set => _underlyingData[9] = (byte) (value?0x03:0x00);
+        }
+        private Int32 _LocaleIndex
+        {
+            get => _underlyingData[13];
+            set => _underlyingData[13] = (byte) value;
+        }
+        private Int32 _Rank
+        {
+            get => _underlyingData[14];
+            set => _underlyingData[14] = (byte) value;
+        }
+        private UInt32 _Mon1
+        {
+            get => GetMonster(0);
+            set => SetMonster(value,0);
+        }
+        private UInt32 _Mon2
+        {
+            get => GetMonster(1);
+            set => SetMonster(value,1);
+        }
+        private UInt32 _Mon3
+        {
+            get => GetMonster(2);
+            set => SetMonster(value,2);
+        }
+        private UInt32 GetMonster(int index)
+        {
+            return BitConverter.ToUInt32(_underlyingData.Slice(15+index*4, 19+index*4),0);
+        }
+        private void SetMonster(UInt32 value, int index)
+        {
+            Array.Copy(BitConverter.GetBytes(value), 0, _underlyingData, 15 + 4 * index, 4);
+        }
+        private bool _M1Temper
+        {
+            get => _underlyingData[27]!=0x00;
+            set => _underlyingData[27] = (byte) (value ? 0x01 : 0x00);
+        }
+        private bool _M2Temper
+        {
+            get => _underlyingData[28]!=0x00;
+            set => _underlyingData[28] = (byte) (value ? 0x01 : 0x00);
+        }
+        private bool _M3Temper
+        {
+            get => _underlyingData[29]!=0x00;
+            set => _underlyingData[29] = (byte) (value ? 0x01 : 0x00);
+        }
+        private int _HP
+        {
+            get => _underlyingData[30];
+            set => _underlyingData[30] = (byte) value;
+        }
+        private int _Attack
+        {
+            get => _underlyingData[31];
+            set => _underlyingData[31] = (byte) value;
+        }
+        private int _Defense
+        {
+            get => _underlyingData[32];
+            set => _underlyingData[32] = (byte) value;
+        }
+        private int _X3
+        {
+            get => _underlyingData[33];
+            set => _underlyingData[33] = (byte) value;
+        }
+        private int _Y0
+        {
+            get => _underlyingData[34];
+            set => _underlyingData[34] = (byte) value;
+        }
+        private int _FlourishIndex
+        {
+            get => _underlyingData[35];
+            set => _underlyingData[35] = (byte) value;
+        }
+        private int _TimeAmountIndex
+        {
+            get => _underlyingData[36];
+            set => _underlyingData[36] = (byte) value;
+        }
+        private bool _Y3
+        {
+            get => _underlyingData[37]!=0x00;
+            set => _underlyingData[37] = (byte) (value?0x01:0x00);
+        }
+        private int _FaintIndex
+        {
+            get => _underlyingData[38];
+            set => _underlyingData[38] = (byte) value;
+        }
+        private int _PlayerCountIndex
+        {
+            get => _underlyingData[39];
+            set => _underlyingData[39] = (byte) value;
+        }
+
+        private int _MonsterRewards
+        {
+            get => _underlyingData[40];
+            set => _underlyingData[40] = (byte) value;
+        }
+
+        public int _ZennyMultiplier
+        {
+            get => _underlyingData[41];
+            set => _underlyingData[41] = (byte) value;
+        }
+        #endregion
+        
+        public static readonly byte[] nullinvestigation= {0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,
+            0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,
+            0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+            0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+        
+        public static readonly byte[] defaultinvestigation= {0x30,0x75,0x00,0x00,0x00,0x08,0x00,0x00,0x00,
+            0x00,0x00,0x00,0x00,0x00,0x00,0x07,0x00,0x00,0x00,0x18,0x00,0x00,0x00,
+            0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+            0x00,0x00,0x00,0x00,0x00,0x00};
+
+        private byte[] _Serialize()
+        {
+            byte[] result = new byte[42];
+            _underlyingData.CopyTo(result, 0);
+            return result;
+        }
+
+        private void _Overwrite(IList<byte> newestdata)
+        {
+            for (int i = 0; i < Investigation.inv_size; i++) _underlyingData[i] = newestdata[i];
+        }
+    #endregion
+        
         public string InvestigationTitle
         {
             get
             {
-                if (!_underlyingInvestigationThinLayer.Filled) return "Empty Slot";
+                if (!_Filled) return "Empty Slot";
                 string objective = _TimeAmountGoal[Goal];
                 int count = _TimeAmountCount[Goal];
                 string mainmon = count != 0 ? (MonsterNames[Mon1] + (count > 1 ? ", ..." : "")) : "Wildlife";
@@ -67,180 +224,195 @@ namespace MHW_Save_Editor.InvestigationEditing
         
         public bool Filled
         {
-            get => _underlyingInvestigationThinLayer.Filled;
+            get => _Filled;
         }
         
         public string ToggleState
         {
-            get => _underlyingInvestigationThinLayer.Filled?"Clear":"Initialize";
+            get => _Filled?"Clear":"Initialize";
         }
         
         public int Goal
         {
-            get => _underlyingInvestigationThinLayer.TimeAmountIndex;
+            get => _TimeAmountIndex;
             set{
-                _underlyingInvestigationThinLayer.TimeAmountIndex = value;
+                _TimeAmountIndex = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("InvestigationTitle");
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public bool Seen
         {
-            get => _underlyingInvestigationThinLayer.Seen;
+            get => _Seen;
             set{
-                _underlyingInvestigationThinLayer.Seen = value;
+                _Seen = value;
                 RaisePropertyChanged();
             }
         }
         public bool Selected
         {
-            get => _underlyingInvestigationThinLayer.Selected;
+            get => _Selected;
             set{
-                _underlyingInvestigationThinLayer.Selected = value;
+                _Selected = value;
                 RaisePropertyChanged();
             }
         }
         public int Rank
         {
-            get => _underlyingInvestigationThinLayer.Rank;
+            get => _Rank;
             set
             {
-                _underlyingInvestigationThinLayer.Rank = value;
+                _Rank = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public int Mon1
         {
-            get => _CodeToMonsterIndex[_underlyingInvestigationThinLayer.Mon1];
+            get => _CodeToMonsterIndex[_Mon1];
             set{
-                _underlyingInvestigationThinLayer.Mon1 = _MonstersCodeList[value];
+                _Mon1 = _MonstersCodeList[value];
                 RaisePropertyChanged();
                 RaisePropertyChanged("InvestigationTitle");
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public int Mon2
         {
-            get => _CodeToMonsterIndex[_underlyingInvestigationThinLayer.Mon2];
+            get => _CodeToMonsterIndex[_Mon2];
             set{
-                _underlyingInvestigationThinLayer.Mon2 = _MonstersCodeList[value];
+                _Mon2 = _MonstersCodeList[value];
                 RaisePropertyChanged();
                 RaisePropertyChanged("InvestigationTitle");
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public int Mon3
         {
-            get => _CodeToMonsterIndex[_underlyingInvestigationThinLayer.Mon3];
+            get => _CodeToMonsterIndex[_Mon3];
             set{
-                _underlyingInvestigationThinLayer.Mon3 = _MonstersCodeList[value];
+                _Mon3 = _MonstersCodeList[value];
                 RaisePropertyChanged();
                 RaisePropertyChanged("InvestigationTitle");
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public bool M1Temper
         {
-            get => _underlyingInvestigationThinLayer.M1Temper;
+            get => _M1Temper;
             set
             {
-                _underlyingInvestigationThinLayer.M1Temper = value;
+                _M1Temper = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public bool M2Temper
         {
-            get => _underlyingInvestigationThinLayer.M2Temper;
+            get => _M2Temper;
             set
             {
-                _underlyingInvestigationThinLayer.M2Temper = value;
+                _M2Temper = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
         public bool M3Temper
         {
-            get => _underlyingInvestigationThinLayer.M3Temper;
+            get => _M3Temper;
             set
             {
-                _underlyingInvestigationThinLayer.M3Temper = value;
+                _M3Temper = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("Legality");
+                RaiseBoxVals();
             }
         }
 
         public int HP
         {
-            get => _underlyingInvestigationThinLayer.HP;
+            get => _HP;
             set
             {
-                _underlyingInvestigationThinLayer.HP = value;
+                _HP = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
         public int Attack
         {
-            get => _underlyingInvestigationThinLayer.Attack;
+            get => _Attack;
             set
             {
-                _underlyingInvestigationThinLayer.Attack = value;
+                _Attack = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
         public int Defense
         {
-            get => _underlyingInvestigationThinLayer.Defense;
+            get => _Defense;
             set
             {
-                _underlyingInvestigationThinLayer.Defense = value;
+                _Defense = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
         public int X3
         {
-            get => _underlyingInvestigationThinLayer.X3;
+            get => _X3;
             set
             {
-                _underlyingInvestigationThinLayer.X3 = value;
+                _X3 = value;
                 RaisePropertyChanged();
+                
             }
         }
         public int FaintIndex
         {
-            get => _underlyingInvestigationThinLayer.FaintIndex;
+            get => _FaintIndex;
             set
             {
-                _underlyingInvestigationThinLayer.FaintIndex = value;
+                _FaintIndex = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
         public int PlayerCountIndex
         {
-            get => _underlyingInvestigationThinLayer.PlayerCountIndex;
+            get => _PlayerCountIndex;
             set
             {
-                _underlyingInvestigationThinLayer.PlayerCountIndex = value;
+                _PlayerCountIndex = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }   
         public int ZennyBonus
         {
-            get => _underlyingInvestigationThinLayer.ZennyMultiplier;
+            get => _ZennyMultiplier;
             set
             {
-                _underlyingInvestigationThinLayer.ZennyMultiplier = value;
+                _ZennyMultiplier = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }  
         public int LocaleIndex
         {
-            get => _underlyingInvestigationThinLayer.LocaleIndex;
+            get => _LocaleIndex;
             set
             {
-                _underlyingInvestigationThinLayer.LocaleIndex = value;
+                _LocaleIndex = value;
                 RaisePropertyChanged();
                 RaisePropertyChanged("CurrentFlourishes");
                 RaisePropertyChanged("FlourishIndex");
@@ -251,57 +423,59 @@ namespace MHW_Save_Editor.InvestigationEditing
 
         public int FlourishIndex
         {
-            get => _underlyingInvestigationThinLayer.FlourishIndex;
+            get => _FlourishIndex;
             set
             {
-                _underlyingInvestigationThinLayer.FlourishIndex = value;
+                _FlourishIndex = value;
                 RaisePropertyChanged();
             }
         }
         public int Y0
         {
-            get => _underlyingInvestigationThinLayer.Y0;
+            get => _Y0;
             set
             {
-                _underlyingInvestigationThinLayer.Y0 = value;
+                _Y0 = value;
                 RaisePropertyChanged();
             }
         }
         public bool Y3
         {
-            get => _underlyingInvestigationThinLayer.Y3;
+            get => _Y3;
             set
             {
-                _underlyingInvestigationThinLayer.Y3 = value;
+                _Y3 = value;
                 RaisePropertyChanged();
             }
         }
         public int MonsterRewards
         {
-            get => _underlyingInvestigationThinLayer.MonsterRewards;
+            get => _MonsterRewards;
             set
             {
-                _underlyingInvestigationThinLayer.MonsterRewards = value;
+                _MonsterRewards = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
 
         public int Attempts
         {
-            get => _underlyingInvestigationThinLayer.Attempts;
+            get => _Attempts;
             set
             {
-                _underlyingInvestigationThinLayer.Attempts = value;
+                _Attempts = value;
                 RaisePropertyChanged();
+                RaiseBoxVals();
             }
         }
-        #endregion
+    #endregion
 
     #region Methods
 
         public byte[] Serialize()
         {
-            return _underlyingInvestigationThinLayer.Serialize();
+            return _Serialize();
         }
 
         public static readonly string CSVHeader =
@@ -494,6 +668,157 @@ namespace MHW_Save_Editor.InvestigationEditing
             new ObservableCollection<string>(new [] {"Nothing","Ancient Fossils", "Crimson Fruit", "Mining Outcrops","Bonepiles","Gathering Points"}),
             new ObservableCollection<string>(new [] {"Nothing","Amber Deposits", "Beryl Deposits", "Mining Outcrops","Bonepiles","Gathering Points"})
         };
+        
+        
     #endregion
+        
+    #region BoxstoreCalculations
+
+        private void RaiseBoxVals()
+        {
+            RaisePropertyChanged("Box1Val");
+            RaisePropertyChanged("Box2Val");
+            RaisePropertyChanged("Box3Val");
+            RaisePropertyChanged("Box4Val");
+            RaisePropertyChanged("Box5Val");
+        }
+        
+        public int Box1Val {get=>BoxValues[0];}
+        public int Box2Val {get=>BoxValues[1];}
+        public int Box3Val {get=>BoxValues[2];}
+        public int Box4Val {get=>BoxValues[3];}
+        public int Box5Val {get=>BoxValues[4];}
+        
+        
+        public int[] BoxValues
+        {
+            get => (Goal == 6 || Goal == 7)?WildlifeRewards():RegularRewards();
+        }
+
+        private int[] WildlifeRewards()
+        {
+            int boxnum = Math.Min(RewardsPoints()/100+1, 3)+MonsterRewards;
+            int[] result = {0, 0, 0, 0, 0};
+            for (int i = 0; i < boxnum; i++) result[4 - i] = 1;
+            return result;
+        }
+
+        private int[] RegularRewards()
+        {
+            int temperParity = Rank / 2;
+            int column = 2*MonsterRewards+temperParity;
+            int row = Math.Min(RewardsPoints()/100,8);
+            (int, int, int, int, int) tuple =  RewardsMatrix[row,column];
+            return new int[] {tuple.Item1, tuple.Item2, tuple.Item3, tuple.Item4, tuple.Item5};
+        }
+
+        private int RewardsPoints()
+        {
+            return AttackPoints[Attack] + HPPoints[HP] + DefensePoints[Defense] +
+                FaintPoints[FaintIndex] + PlayerCountPoints[PlayerCountIndex] +
+                ZennyPoints[ZennyBonus] + ObjectivePoints[Goal] + rdiPoints();
+        }
+
+        private static int[] AttackPoints = {0, 0, 0, 30, 60, 100};
+        private static int[] HPPoints = {0, 0, 0, 30, 60, 100};
+        private static int[] DefensePoints = {0, 0, 0, 30, 60, 60};
+        private static int[] FaintPoints = {0, 0, 40, 100};
+        private static int[] PlayerCountPoints = {0, 100};
+        private static int[] ZennyPoints = {100,60,30,0,0};
+        private static int[] ObjectivePoints = {0,100,150,80,130,200,10,10,70,170,220};
+
+        private static (int, int, int, int, int)[,] RewardsMatrix = new [,]
+        {
+            {(0,0,0,1,2),(0,0,0,0,4),(0,0,0,2,2),(0,0,0,0,4),(0,0,0,1,3),(0,0,0,4,4)},
+            {(0,0,0,1,2),(0,0,0,4,4),(0,0,0,2,2),(0,0,0,4,4),(0,0,0,2,3),(0,0,4,4,4)},
+            {(0,0,1,2,2),(0,0,0,4,4),(0,0,2,2,2),(0,0,0,4,4),(0,0,2,2,3),(0,0,4,4,4)},
+            {(0,0,1,1,3),(0,0,0,4,4),(0,0,1,2,3),(0,0,4,4,4),(0,0,2,2,3),(0,4,4,4,4)},
+            {(0,1,1,3,3),(0,0,4,4,4),(0,1,2,3,3),(0,0,4,4,4),(0,2,2,3,3),(0,4,4,4,4)},
+            {(0,1,1,3,3),(0,4,4,4,4),(0,1,2,3,3),(0,4,4,4,4),(0,2,2,3,3),(4,4,4,4,4)},
+            {(0,1,3,3,3),(0,4,4,4,4),(0,2,3,3,3),(0,4,4,4,4),(0,3,3,3,3),(4,4,4,4,4)},
+            {(0,1,3,3,3),(0,4,4,4,4),(0,2,3,3,3),(0,4,4,4,4),(0,3,3,3,3),(4,4,4,4,4)},
+            {(1,3,3,3,3),(4,4,4,4,4),(2,3,3,3,3),(4,4,4,4,4),(3,3,3,3,3),(4,4,4,4,4)}
+        };
+
+        private int rdiPoints()
+        {
+            int rdi = 0;
+            rdi += (IsElder(Mon1) ? 1 : 0) * 100;
+            rdi += MonsterPointsSlot1[MonsterNames[Mon1]]*(M1Temper?1:0);
+            rdi += MonsterPoints[MonsterNames[Mon2]];
+            rdi += MonsterPoints[MonsterNames[Mon3]];
+            rdi += 50 * (M2Temper ? 1 : 0) + 50 * (M3Temper ? 1 : 0);
+            return rdi;
+        }
+
+        private static Dictionary<string, int> MonsterPointsSlot1 = new Dictionary<string, int>
+        {
+            {"Empty", 0},
+            {"Anjanath", 60},
+            {"Tobi-Kadachi", 40},
+            {"Rathian", 60},
+            {"Rathalos", 40},
+            {"Pukei-Pukei", 0},
+            {"Kushala Daora", 60},
+            {"Kulu-Ya-Ku", 0},
+            {"Great Jagras", 0},
+            {"Bazelgeuse", 60},
+            {"Deviljho", 0},
+            {"Azure Rathalos", 60},
+            {"Barroth", 40},
+            {"Black Diablos", 60},
+            {"Diablos", 40},
+            {"Jyuratodus", 40},
+            {"Pink Rathian", 0},
+            {"Tzitzi-Ya-Ku", 0},
+            {"Paolumu", 60},
+            {"Legiana", 40},
+            {"Kirin", 60},
+            {"Teostra", 60},
+            {"Odogaron", 40},
+            {"Great Girros", 0},
+            {"Radobaan", 60},
+            {"Vaal Hazak", 60},
+            {"Nergigante", 60},
+            {"Lavasioth", 60},
+            {"Uragaan", 60},
+            {"Dodogama", 0}
+        };
+
+        private static Dictionary<string, int> MonsterPoints = new Dictionary<string, int>
+        {
+            {"Empty", 0},
+            {"Anjanath", 30},
+            {"Tobi-Kadachi", 30},
+            {"Rathian", 30},
+            {"Rathalos", 60},
+            {"Pukei-Pukei", 30},
+            {"Kushala Daora", 100},
+            {"Kulu-Ya-Ku", 0},
+            {"Great Jagras", 0},
+            {"Bazelgeuse", 60},
+            {"Deviljho", 0},
+            {"Azure Rathalos", 60},
+            {"Barroth", 30},
+            {"Black Diablos", 60},
+            {"Diablos", 60},
+            {"Jyuratodus", 30},
+            {"Pink Rathian", 60},
+            {"Tzitzi-Ya-Ku", 0},
+            {"Paolumu", 30},
+            {"Legiana", 60},
+            {"Kirin", 100},
+            {"Teostra", 100},
+            {"Odogaron", 60},
+            {"Great Girros", 0},
+            {"Radobaan", 30},
+            {"Vaal Hazak", 100},
+            {"Nergigante", 100},
+            {"Lavasioth", 60},
+            {"Uragaan", 60},
+            {"Dodogama", 30}
+        };
+
+        #endregion
     }
 }

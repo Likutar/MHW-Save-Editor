@@ -50,7 +50,7 @@ namespace MHW_Save_Editor
             var col = (ListCollectionView) Application.Current.Resources["InvestigationCollectionView"];
             var listing = ((IList<Investigation>) col.SourceCollection);
             int index = col.CurrentPosition;
-            listing[index] = listing[index].Filled?new Investigation():new Investigation(InvestigationThinLayer.defaultinvestigation);
+            listing[index] = listing[index].Filled?new Investigation():new Investigation(Investigation.defaultinvestigation);
         }
         
         public void NextRecordExecute()

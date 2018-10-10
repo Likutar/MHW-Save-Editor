@@ -10,6 +10,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
 	<UserControl.Resources>
 		<converter:MonsterIconConverter x:Key="MonsterIconConverter"/>
+		<converter:BoxIconConverter x:Key="BoxIconConverter"/>
 	</UserControl.Resources>
 	<Grid>
         <Grid.RowDefinitions>
@@ -215,7 +216,7 @@
 			<xctk:IntegerUpDown Grid.Column="1"  Grid.Row="5" Minimum="1" Maximum="10"  AllowTextInput = "False"
 			                    Value = "{Binding InvestigationCollectionView/Attempts, UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
 			                    IsEnabled="{Binding InvestigationCollectionView/Filled}"/>
-			<TextBlock Grid.Column="0" Grid.Row="6" Style="{StaticResource InvestigationLabel}">Wildlife Extra Boxes: </TextBlock>
+			<TextBlock Grid.Column="0" Grid.Row="6" Style="{StaticResource InvestigationLabel}">Y0</TextBlock>
 			<xctk:IntegerUpDown Grid.Column="1" Grid.Row="6" Minimum="0" Maximum="2" AllowTextInput = "False"
 			                    Value = "{Binding InvestigationCollectionView/Y0, UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
 			                    IsEnabled="{Binding InvestigationCollectionView/Filled}"/>
@@ -231,14 +232,27 @@
 			    <ColumnDefinition Width="5*" />
 			    <ColumnDefinition Width="1*" />
 		    </Grid.ColumnDefinitions>
-		    <TextBlock Grid.Column="0"  Style="{StaticResource InvestigationLabel}" >Rewards?: </TextBlock>
+		    <TextBlock Grid.Column="0"  Style="{StaticResource InvestigationLabel}" >Rewards: </TextBlock>
 		    <xctk:IntegerUpDown Grid.Column="1" Minimum="0" Maximum="2" AllowTextInput = "False"
 		                        Value = "{Binding InvestigationCollectionView/MonsterRewards, UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
 		                        IsEnabled="{Binding InvestigationCollectionView/Filled}"/>
 	    </Grid>
 	    <!-- Rewards Display -->
 	    <Grid Grid.Row="6">
-		
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1*" />
+				</Grid.ColumnDefinitions>
+				<Image Grid.Column="0" Source = "{Binding InvestigationCollectionView/Box1Val, Converter = {StaticResource BoxIconConverter}}"/>
+				<Image Grid.Column="1" Source = "{Binding InvestigationCollectionView/Box2Val, Converter = {StaticResource BoxIconConverter}}"/>
+				<Image Grid.Column="2" Source = "{Binding InvestigationCollectionView/Box3Val, Converter = {StaticResource BoxIconConverter}}"/>
+				<Image Grid.Column="3" Source = "{Binding InvestigationCollectionView/Box4Val, Converter = {StaticResource BoxIconConverter}}"/>
+				<Image Grid.Column="4" Source = "{Binding InvestigationCollectionView/Box5Val, Converter = {StaticResource BoxIconConverter}}"/>
+			</Grid>
 	    </Grid>
 	    <Grid Grid.Row="7">
 		    <Border BorderThickness="1" BorderBrush="Gray">

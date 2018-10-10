@@ -150,13 +150,13 @@
     <Compile Include="src\InventoryEditing\SlotView.xaml.cs">
       <DependentUpon>SlotView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\InvestigationEditing\BoxIconConverter.cs" />
     <Compile Include="src\InvestigationEditing\Boxstore.xaml.cs">
       <DependentUpon>Boxstore.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InvestigationEditing\BoxstoreViewModel.cs">
       <DependentUpon>Boxstore.xaml</DependentUpon>
     </Compile>
-    <Compile Include="src\InvestigationEditing\InvestigationThinLayer.cs" />
     <Compile Include="src\InvestigationEditing\Investigation.cs" />
     <Compile Include="src\InvestigationEditing\InvestigationView.xaml.cs">
       <DependentUpon>InvestigationView.xaml</DependentUpon>
@@ -239,100 +239,115 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Anjanath.png" >
+    <EmbeddedResource Include="src\Resources\BoxIcons\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources\BoxIcons\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources\BoxIcons\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources\BoxIcons\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources\BoxIcons\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Anjanath.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Azure Rathalos.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Azure Rathalos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Barroth.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Barroth.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Bazelgeuse.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Bazelgeuse.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Behemoth.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Behemoth.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Black Diablos.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Black Diablos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Deviljho.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Deviljho.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Diablos.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Diablos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Dodogama.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Dodogama.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Great Girros.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Great Girros.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Great Jagras.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Great Jagras.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Jyuratodus.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Jyuratodus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Kirin.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Kirin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Kulu-Ya-Ku.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Kulu-Ya-Ku.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Kushala Daora.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Kushala Daora.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Lavasioth.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Lavasioth.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Legiana.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Legiana.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Lunastra.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Lunastra.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Nergigante.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Nergigante.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Odogaron.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Odogaron.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Paolumu.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Paolumu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Pink Rathian.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Pink Rathian.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Pukei-Pukei.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Pukei-Pukei.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\question_ID copy.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\question_ID copy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Radobaan.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Radobaan.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Rathalos.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Rathalos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Rathian.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Rathian.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Teostra.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Teostra.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Tobi-Kadachi.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Tobi-Kadachi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Tzitzi-Ya-Ku.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Tzitzi-Ya-Ku.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Uragaan.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Uragaan.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\Vaal Hazak.png" >
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Vaal Hazak.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Resource Include="src\Resources\ItemIcons\00000002">
