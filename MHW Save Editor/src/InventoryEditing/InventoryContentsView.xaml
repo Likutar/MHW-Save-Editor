@@ -15,7 +15,7 @@
                 <ItemsControl.ItemsPanel>
                     <!-- specify the panel that is the container for the items -->
                     <ItemsPanelTemplate>
-                        <xctk:WrapPanel/>
+                        <WrapPanel/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <!-- specify the template used to render each item -->

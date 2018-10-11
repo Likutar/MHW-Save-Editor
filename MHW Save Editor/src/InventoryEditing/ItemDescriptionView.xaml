@@ -22,11 +22,9 @@
             <ColumnDefinition Width = "3*"/>
             <ColumnDefinition Width = "1*"/>
         </Grid.ColumnDefinitions>
-        <!-- TODO - Properly bind this list God Have Mercy on My Soul 
-             The list should be inventory slot bound, the inventory slot get should simply be generating a view
-             from the item list appropiate to the slot type-->
         <ComboBox Grid.Column = "0" Grid.Row = "0" Grid.ColumnSpan="3" ItemsSource="{ Binding SlotChoicesDropDown}" 
-                  IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding Item, Mode = OneWay}"
+                  IsSynchronizedWithCurrentItem="True" 
+                  SelectedItem="{Binding Item, Mode = OneWay, FallbackValue=SlotChoicesDropDown[0]}"
                   DropDownClosed = "ItemSelection"
                   />
         <Grid Grid.Column = "0" Grid.Row = "1">

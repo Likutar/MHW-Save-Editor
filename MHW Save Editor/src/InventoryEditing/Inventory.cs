@@ -115,7 +115,8 @@ namespace MHW_Save_Editor.InventoryEditing
             Manifest = new ObservableCollection<Item>(Items.Values);
         }
         public ListCollectionView GetItemsView() => (ListCollectionView)new CollectionViewSource { Source = Manifest }.View;
-        public Item FromCode(UInt32 code) => Items[code];
+
+        public Item FromCode(UInt32 code){try{return Items[code];}catch{return Items[0];}}
         
         public static ItemList ItemListing = new ItemList(0);
         public static ItemList MaterialListing = new ItemList(1);
