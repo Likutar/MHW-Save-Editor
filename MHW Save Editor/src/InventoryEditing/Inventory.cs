@@ -102,7 +102,7 @@ namespace MHW_Save_Editor.InventoryEditing
         }
     }
     //Type: 0=Item, 1=Material, 2=Account Item, 3=Ammo/Coating, 4=Decoration
-    public class ItemList
+    public class ItemList :  NotifyUIBase
     {
         
         private readonly Dictionary<UInt32, Item> Items;
@@ -140,7 +140,7 @@ namespace MHW_Save_Editor.InventoryEditing
         }
     }
     
-    public class Item
+    public class Item :  NotifyUIBase
     {
         public override string ToString()
         {

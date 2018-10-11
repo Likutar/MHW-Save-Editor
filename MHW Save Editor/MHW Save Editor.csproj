@@ -239,6 +239,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Resource Include="src\Resources\MonsterIcons\Temper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <EmbeddedResource Include="src\Resources\BoxIcons\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -323,7 +326,7 @@
     <EmbeddedResource Include="src\Resources\MonsterIcons\Pukei-Pukei.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Resources\MonsterIcons\question_ID copy.png">
+    <EmbeddedResource Include="src\Resources\MonsterIcons\Empty.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Resources\MonsterIcons\Radobaan.png">

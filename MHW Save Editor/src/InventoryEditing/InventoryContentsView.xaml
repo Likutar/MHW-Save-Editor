@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:MHW_Save_Editor.InventoryEditing"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
@@ -14,7 +15,7 @@
                 <ItemsControl.ItemsPanel>
                     <!-- specify the panel that is the container for the items -->
                     <ItemsPanelTemplate>
-                        <WrapPanel/>
+                        <xctk:WrapPanel/>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <!-- specify the template used to render each item -->
