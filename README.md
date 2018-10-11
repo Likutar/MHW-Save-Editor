@@ -10,10 +10,12 @@ legendff and Count Lizzie - For figuring out the encryption algorithm and the ch
 legendff - For getting all of the encryption keys from memory.  
 Pascal/Ambytes - For writing the C# decryptor and checksum.  
 AsteriskAmpersand - For rewriting the base GUI to support a complete editor, doing the save file investigation structure and investigation editor portion.  
-Kaito - For helping testing and debugging the investigation editor and the new GUI. Also responsible for the backup and restore functionality.
+Kaito - For helping testing and debugging the investigation editor and the new GUI. Also responsible for the backup and restore functionality.  
 goose - For the appearance struct.  
 V00d00y - For almost every other structure in the save files not found by the previously listed.  
-V00d00y and Stratas - For robustness testing and the second for help with profiling performances.
+V00d00y and Stratas - For robustness testing and the second for help with profiling performances.  
 Seikur0 - For his tables which allowed V00d00y to do the above listed.  
-The investigation editor testers: AllStarTech, Kaito, nicemoreoften, Syelia Walldasher, V00d00y, Stratas.  
+W.EzeithLis - For his help with Investigation Box Rewards calculations.  
+Digifreak and W.EzeithLis - For their help with zenny bonus calculations and tabulating.  
+The investigation editor testers: AllStarTech, Kaito, nicemoreoften, Syelia Walldasher, W.EzeithLis, Digifreak, V00d00y, Stratas.  
 The saves fallen in battle: nicemoreoften and Saddah.
