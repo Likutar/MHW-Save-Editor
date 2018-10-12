@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Data;
+using MHW_Save_Editor.Data;
 
 namespace MHW_Save_Editor.InventoryEditing
 {
-    public class InventoryArea
+    public class InventoryArea : NotifyUIBase
     {
         public ListCollectionView SlotList { get; set; }
         private string _areaname;

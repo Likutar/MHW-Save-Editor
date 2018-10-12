@@ -49,7 +49,6 @@
                             Value = "{Binding Amount, 
                             UpdateSourceTrigger=PropertyChanged, Mode = TwoWay}"
                             IsEnabled="{Binding Item.CanIncrease}"
-                            
                             />
        </Grid>
 </UserControl>

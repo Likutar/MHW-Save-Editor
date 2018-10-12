@@ -51,7 +51,6 @@
             <e p="InventoryAreasViewModel.cs" t="Include" />
             <e p="InventoryContentsView.xaml" t="Include" />
             <e p="InventoryContentsView.xaml.cs" t="Include" />
-            <e p="InventoryContentsViewModel.cs" t="Include" />
             <e p="InventoryView.xaml" t="Include" />
             <e p="InventoryView.xaml.cs" t="Include" />
             <e p="ItemDescriptionView.xaml" t="Include" />
@@ -565,6 +564,7 @@
             <e p="Utility.cs" t="Include" />
           </e>
         </e>
+        <e p="TabContent.cs" t="Include" />
       </e>
       <e p="MHW Save Editor.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

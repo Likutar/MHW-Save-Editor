@@ -126,9 +126,7 @@
     <Compile Include="src\FileFormat\GenericFile.cs" />
     <Compile Include="src\FileFormat\SaveFile.cs" />
     <Compile Include="src\InventoryEditing\Inventory.cs" />
-    <Compile Include="src\InventoryEditing\InventoryArea.cs">
-      <DependentUpon>InventoryAreas.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="src\InventoryEditing\InventoryArea.cs" />
     <Compile Include="src\InventoryEditing\InventoryAreas.xaml.cs">
       <DependentUpon>InventoryAreas.xaml</DependentUpon>
     </Compile>
@@ -136,9 +134,6 @@
       <DependentUpon>InventoryAreas.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">
-      <DependentUpon>InventoryContentsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="src\InventoryEditing\InventoryContentsViewModel.cs">
       <DependentUpon>InventoryContentsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InventoryEditing\InventoryView.xaml.cs">
@@ -180,6 +175,7 @@
     <Compile Include="src\Utility\ArraySegmentWrapper.cs" />
     <Compile Include="src\Utility\BoyerMoore.cs" />
     <Compile Include="src\Utility\Utility.cs" />
+    <Compile Include="TabContent.cs" />
     <Page Include="InputBox.xaml" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

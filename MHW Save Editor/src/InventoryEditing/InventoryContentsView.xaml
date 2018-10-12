@@ -9,26 +9,20 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="SlotDataTemplate">
+                <!-- How to display each "inventory slot of the collection" -->
+                <local:SlotView  Height = "54" Width = "110"/>
+            </DataTemplate>
+            <ItemsPanelTemplate x:Key="WrapPanel">
+                <WrapPanel/>
+            </ItemsPanelTemplate>
+        </Grid.Resources>
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" >
-            <WrapPanel >
-            <ItemsControl x:Name="InventoryGrid" ItemsSource="{Binding InventoryAreaCollectionView/SlotList}">
-                <ItemsControl.ItemsPanel>
-                    <!-- specify the panel that is the container for the items -->
-                    <ItemsPanelTemplate>
-                        <WrapPanel/>
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-                <!-- specify the template used to render each item -->
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <!-- How to display each "inventory slot of the collection" -->
-                        <ContentControl>
-                            <local:SlotView  Height = "54" Width = "110"/>
-                        </ContentControl>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
+            <ItemsControl ItemsSource="{Binding SlotList}" 
+                          ItemTemplate = "{StaticResource SlotDataTemplate}" 
+                          ItemsPanel = "{StaticResource WrapPanel}" >
             </ItemsControl>
-            </WrapPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

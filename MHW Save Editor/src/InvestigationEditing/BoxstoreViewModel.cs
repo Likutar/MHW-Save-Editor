@@ -21,7 +21,7 @@ namespace MHW_Save_Editor
         public BoxstoreViewModel()
         {
             InvestigationCollectionView = Application.Current.Resources["InvestigationCollectionView"] as ListCollectionView;
-            InvestigationCollectionView.MoveCurrentToPosition(1);
+            InvestigationCollectionView.MoveCurrentToPosition(0);
         }
     }
 }

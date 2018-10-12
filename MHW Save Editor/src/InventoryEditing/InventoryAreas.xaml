@@ -4,11 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:MHW_Save_Editor.InventoryEditing"
+             xmlns:ikriv="clr-namespace:IKriv.Windows.Controls.Behaviors"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <ListBox IsSynchronizedWithCurrentItem="True"
-                 ItemsSource="{Binding InventoryAreaCollectionView}"
-                 />
-    </Grid>
+    <TabControl ItemsSource="{Binding InventoryAreaCollectionView}" ikriv:TabContent.IsCached="True">          
+            <ikriv:TabContent.Template>
+                <DataTemplate>
+                    <local:InventoryContentsView/>
+                </DataTemplate>
+            </ikriv:TabContent.Template>
+    </TabControl>
 </UserControl>
