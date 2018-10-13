@@ -179,7 +179,7 @@ namespace MHW_Save_Editor
         private void MaxAllInvestigations()
         {
             foreach (Investigation inv in ((IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
-                "InvestigationCollectionView"]).SourceCollection)) inv.Attempts = 10;
+                "InvestigationCollectionView"]).SourceCollection)) inv.Attempts = inv.Filled?10:0;
         }
 
         private void ReSortInvestigations(Func<Investigation, IEnumerable<int>> sorterer = null)
