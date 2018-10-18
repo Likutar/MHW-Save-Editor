@@ -77,9 +77,7 @@ namespace MHW_Save_Editor.InventoryEditing
         public readonly Dictionary<UInt32, Item> ItemList;
         private SingletonMasterItemList()
         {
-            List<Item> Listing = 
-            JsonConvert.DeserializeObject<List<Item>>(
-                File.ReadAllText(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)+@"/src/Resources/MasterItemList.json"));
+            List<Item> Listing = JsonConvert.DeserializeObject<List<Item>>(Properties.Resources.MasterItemList);
             ItemList = new Dictionary<UInt32, Item>();
             foreach (Item _item in Listing) ItemList.Add(_item.id,_item);
         }
@@ -179,8 +177,7 @@ namespace MHW_Save_Editor.InventoryEditing
         public bool PouchVisible { get => (flags&(0x1<<12))!=0x0;}
         //public bool Unknown { get => (flags&(0x1<<13))!=0x0;}...
 
-        private static readonly string _imageRoot =
-            Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)+@"/src/Resources/ItemIcons/";
+        private static readonly string _imageRoot = "/src/Resources/ItemIcons/";
         private static readonly string _StarIconPath = "star.png";
         private static readonly string _EmptyIcon = "255_0.png";
         public bool CanIncrease { get => !Default && id != 0;}

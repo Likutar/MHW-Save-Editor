@@ -8,21 +8,27 @@
         xmlns:tabs="clr-namespace:MHW_Save_Editor.Tabs"
         mc:Ignorable="d"
         Title="MHW - Save Editor" Height="700.0" Width="680.0" ResizeMode="CanResizeWithGrip"
-        Icon = "./src/Resources/Icon/monhan_fw_F6x_icon.ico"
+        Icon = "/src/Resources/Icon/monhan_fw_F6x_icon.ico"
         > 
-    <Grid Name="Root" xmlns:local="clr-namespace:MHW_Save_Editor">
-        <Menu Width="Auto" Margin="0,0,0,649">
+    <DockPanel Name="Root" xmlns:local="clr-namespace:MHW_Save_Editor">
+        <Menu Width="Auto" Height="20" DockPanel.Dock="Top">
             <MenuItem Header="File">
                 <MenuItem Header="Open" Click="OpenFunction" />
                 <MenuItem Header="Save" Click="SaveFunction" />
                 <MenuItem Header="Backup" Click="BackupFunction" />
                 <MenuItem Header="Restore" Click="RestoreFunction" />
             </MenuItem>
+            <MenuItem Header="Slot">
+                <MenuItem Name="Slot0" IsChecked="True" Header="Slot 1" Click="SetSlot0Active" />
+                <MenuItem Name="Slot1" Header="Slot 2" Click="SetSlot1Active" />
+                <MenuItem Name="Slot2" Header="Slot 3" Click="SetSlot2Active" />
+                <MenuItem Header="Reset Memory" Click="clearMem" />
+            </MenuItem>
             <MenuItem Header="Edit" ItemsSource = "{Binding EditOptions}" Click = "EditMenuItem_Click"/>
             <MenuItem Header="Tools" ItemsSource = "{Binding ToolsOptions}" Click = "ToolsMenuItem_Click"/>
         </Menu>
         <Grid>
-            <TabControl Name = "TabControl" SelectionChanged = "TabControl_SelectionChanged" Margin="0,25,0,0">
+            <TabControl Name = "TabControl" SelectionChanged = "TabControl_SelectionChanged">
                 <TabItem Header="General">
                     <local:GeneralTab x:Name="GeneralTabControl" SteamLabelDoubleClicked="EditSteamLabel"/>
                 </TabItem>
@@ -40,6 +46,6 @@
                 </TabItem>
             </TabControl>
         </Grid>
-    </Grid>
+    </DockPanel>
 </Window>
 

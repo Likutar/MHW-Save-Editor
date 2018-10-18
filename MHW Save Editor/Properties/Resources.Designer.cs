@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MHW.Properties
-{
-
-
+namespace MHW_Save_Editor.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,52 +19,55 @@ namespace MHW.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MHW_Save_Editor.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;id&quot;: 0, &quot;subType&quot;: 0, &quot;storageID&quot;: 1, &quot;rarity&quot;: 0, &quot;carryLimit&quot;: 1, &quot;unk&quot;: 1, &quot;sortOrder&quot;: 1, &quot;flags&quot;: 0, &quot;iconID&quot;: 255, &quot;iconColor&quot;: 0, &quot;carryItem&quot;: 0, &quot;sellPrice&quot;: 0, &quot;buyPrice&quot;: 0, &quot;name&quot;: &quot;--------&quot;, &quot;description&quot;: &quot;Empty Slot&quot;},
+        ///{&quot;id&quot;: 1, &quot;subType&quot;: 0, &quot;storageID&quot;: 0, &quot;rarity&quot;: 0, &quot;carryLimit&quot;: 10, &quot;unk&quot;: 10, &quot;sortOrder&quot;: 2, &quot;flags&quot;: 8, &quot;iconID&quot;: 5, &quot;iconColor&quot;: 2, &quot;carryItem&quot;: 0, &quot;sellPrice&quot;: 8, &quot;buyPrice&quot;: 66, &quot;name&quot;: &quot;Potion&quot;, &quot;description&quot;: &quot;Restores a small amount of health.&quot;},
+        ///{&quot;id&quot;: 2, &quot;subTy [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MasterItemList {
+            get {
+                return ResourceManager.GetString("MasterItemList", resourceCulture);
             }
         }
     }

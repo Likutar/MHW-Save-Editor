@@ -12,12 +12,12 @@ namespace MHW_Save_Editor
 {
     public partial class MainWindow
     {
-        private int PlayerOffset = 0x3004DC;
-        private int PlayerOffsetEnd = 0x3F65EB;
+        private int[] PlayerOffset = {0x3004DC,0x3F65EC,0x4EC6FC};
+        private int[] PlayerOffsetEnd = {0x3F65EB,0x4EC6FB,0x5E280B};
         public object PopulateInventory(byte[] savefile)
         {
             List<InventoryArea> inv = GetInventoryAreas(
-                savefile.Slice(PlayerOffset, PlayerOffsetEnd));
+                savefile.Slice(PlayerOffset[Properties.Settings.Default.activeSlot], PlayerOffsetEnd[Properties.Settings.Default.activeSlot]));
             ObservableCollection<InventoryArea> inventory = new ObservableCollection<InventoryArea>(inv);
             ListCollectionView inventoryAreaCollectionView = (ListCollectionView)new CollectionViewSource { Source = inventory }.View;
             Application.Current.Resources["InventoryAreaCollectionView"] = inventoryAreaCollectionView;
@@ -35,11 +35,12 @@ namespace MHW_Save_Editor
 
         public void CommitInventory()
         {
+            int settingOffset = Properties.Settings.Default.activeSlot;
             IList<InventoryArea> source = (IList<InventoryArea>) ((ListCollectionView) Application.Current.Resources["InventoryAreaCollectionView"])
                 .SourceCollection;
             foreach ((var Area, var Properties) in source.Zip(InventoryArea.AreaSet, (i1, i2) => (i1, i2)))
             {
-                Area.Serialize().ToArray().CopyTo(saveFile.data, PlayerOffset+Properties.localoffset);
+                Area.Serialize().ToArray().CopyTo(saveFile.data, PlayerOffset[settingOffset] +Properties.localoffset);
             }
         }
         
