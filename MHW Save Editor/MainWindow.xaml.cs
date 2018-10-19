@@ -11,7 +11,7 @@ using MHW_Save_Editor.FileFormat;
 using MHW_Save_Editor.InvestigationEditing;
 using Microsoft.Win32;
 using System.Configuration;
-using MHW.Properties;
+using MHW_Save_Editor.Properties;
 
 namespace MHW_Save_Editor
 {
@@ -162,6 +162,46 @@ namespace MHW_Save_Editor
             }
         }
 
+        private void SetSlot0Active(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.activeSlot = 0;
+            checkSlotMenu(sender, e);
+            rePopulate(sender, e);
+        }
+
+        private void SetSlot1Active(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.activeSlot = 1;
+            checkSlotMenu(sender, e);
+            rePopulate(sender, e);
+        }
+
+        private void SetSlot2Active(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.activeSlot = 2;
+            checkSlotMenu(sender, e);
+            rePopulate(sender, e);
+        }
+
+        private void checkSlotMenu(object sender, RoutedEventArgs e)
+        {
+            if (Properties.Settings.Default.activeSlot == 0) { Slot0.IsChecked = true; Slot1.IsChecked = false; Slot2.IsChecked = false; }
+            if (Properties.Settings.Default.activeSlot == 1) { Slot0.IsChecked = false; Slot1.IsChecked = true; Slot2.IsChecked = false; }
+            if (Properties.Settings.Default.activeSlot == 2) { Slot0.IsChecked = false; Slot1.IsChecked = false; Slot2.IsChecked = true; }
+        }
+
+        private void clearMem(object sender, RoutedEventArgs e)
+        {
+            GC.Collect();
+        }
+
+        private void rePopulate(object sender, RoutedEventArgs e)
+        {
+            InvestigationsTabControl.Content = PopulateInvestigations(saveFile.data);
+            InventoryTabControl.Content = PopulateInventory(saveFile.data);
+            GC.Collect();
+        }
+
         void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.Source is TabControl)
@@ -230,12 +270,12 @@ namespace MHW_Save_Editor
             }
         }
 
-
         private void EditMenuItem_Click(object sender, RoutedEventArgs e)
         {
             MenuItem  obMenuItem = e.OriginalSource as MenuItem ;
             EditHandlers(TabControl.SelectedIndex,obMenuItem.Header.ToString());
         }
+
         private void ToolsMenuItem_Click(object sender, RoutedEventArgs e)
         {
             MenuItem  obMenuItem = e.OriginalSource as MenuItem ;

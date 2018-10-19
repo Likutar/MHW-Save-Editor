@@ -22,7 +22,7 @@ namespace MHW_Save_Editor
         private object PopulateInvestigations(byte[] newdata)
         {
             List<Investigation> inv = GetInvestigations(
-                newdata.Slice(Investigation.inv_offsets[0], Investigation.inv_offsets[0]+Investigation.inv_size*Investigation.inv_number));
+                newdata.Slice(Investigation.inv_offsets[Properties.Settings.Default.activeSlot], Investigation.inv_offsets[Properties.Settings.Default.activeSlot]+Investigation.inv_size*Investigation.inv_number));
             ObservableCollection<Investigation> boxstore = new ObservableCollection<Investigation>(inv);
             ListCollectionView investigationCollectionView = (ListCollectionView)new CollectionViewSource { Source = boxstore }.View;
             Application.Current.Resources["InvestigationCollectionView"] = investigationCollectionView;
@@ -172,7 +172,7 @@ namespace MHW_Save_Editor
             {
                 ((IList<Investigation>) ((ListCollectionView) Application.Current.Resources[
                         "InvestigationCollectionView"]).SourceCollection)
-                    [i].Serialize().CopyTo(saveFile.data, Investigation.inv_offsets[0]+i*Investigation.inv_size);
+                    [i].Serialize().CopyTo(saveFile.data, Investigation.inv_offsets[Properties.Settings.Default.activeSlot] +i*Investigation.inv_size);
             }
         }
 
