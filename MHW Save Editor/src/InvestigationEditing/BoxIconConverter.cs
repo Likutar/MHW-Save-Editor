@@ -8,8 +8,7 @@ namespace MHW_Save_Editor.InvestigationEditing
 {
     public class BoxIconConverter: IValueConverter
     {
-            private static readonly string iconpath =
-                Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"/src/Resources/BoxIcons/";
+            private static readonly string iconpath = "/src/Resources/BoxIcons/";
             public object Convert(Object value, Type targetType, Object parameter, CultureInfo culture)
             {
                 return iconpath + (int) value + ".png";

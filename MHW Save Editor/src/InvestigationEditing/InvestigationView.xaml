@@ -80,15 +80,15 @@
 			</Grid.ColumnDefinitions>
 			<Image Grid.Row="0" Grid.Column="0" Visibility="{Binding InvestigationCollectionView/M1Temper, 
 								Mode = OneWay, Converter={StaticResource BoolToVis}}" 
-								Source = "/src/Resources/MonsterIcons/Temper.png"/>
+								Source = "/src/Resources/MonsterIcons/Temper.png" />
 			<Image Grid.Row="0" Grid.Column="0" Source = "{Binding InvestigationCollectionView/Mon1, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}" />
 			<Image Grid.Row="0" Grid.Column="1" Visibility="{Binding InvestigationCollectionView/M2Temper, 
 								Mode = OneWay, Converter={StaticResource BoolToVis}}" 
-								Source = "/src/Resources/MonsterIcons/Temper.png"/>
+								Source = "/src/Resources/MonsterIcons/Temper.png" />
 			<Image Grid.Row="0" Grid.Column="1" Source = "{Binding InvestigationCollectionView/Mon2, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}"/>
 			<Image Grid.Row="0" Grid.Column="2" Visibility="{Binding InvestigationCollectionView/M3Temper, 
 								Mode = OneWay, Converter={StaticResource BoolToVis}}" 
-								Source = "/src/Resources/MonsterIcons/Temper.png"/>
+								Source = "/src/Resources/MonsterIcons/Temper.png" />
 			<Image Grid.Row="0" Grid.Column="2" Source = "{Binding InvestigationCollectionView/Mon3, Mode = OneWay, Converter = {StaticResource MonsterIconConverter}}"/>
 			<Grid Grid.Row="1" Grid.Column="0">
 				<Grid.ColumnDefinitions>
