@@ -22,8 +22,11 @@ namespace MHW_Save_Editor
     {
         private SaveFile saveFile;
         private MemoryStream data;
-        private bool open;
-        
+        public bool FileLoaded
+        {
+            get => saveFile != null;
+        }
+
         public MainWindow()
         {           
             data = new MemoryStream();
@@ -34,7 +37,6 @@ namespace MHW_Save_Editor
 
         private void OpenFunction(object sender, RoutedEventArgs e)
         {
-            open = true;
             string steamPath;
             try{steamPath = Utility.getSteamPath();}
             catch{steamPath = "C:";}
@@ -47,6 +49,7 @@ namespace MHW_Save_Editor
             try
             {
                 saveFile = new SaveFile(File.ReadAllBytes(openFileDialog.FileName));
+                RaisePropertyChanged("FileLoaded");
             }
             catch
             {
@@ -60,11 +63,12 @@ namespace MHW_Save_Editor
             GeneralTabControl.FilePath = openFileDialog.FileName;
             InvestigationsTabControl.Content = PopulateInvestigations(saveFile.data);
             InventoryTabControl.Content = PopulateInventory(saveFile.data);
+            SlotTabControl.Content = PopulateSlotData(saveFile.data);
         }
 
         private void SaveFunction(object sender, RoutedEventArgs e)
         {
-            if (!open) return;
+            if (saveFile == null) return;
             var saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Encrypted|*|Unencrypted (*.bin)|*.bin";
             saveFileDialog.InitialDirectory = Utility.getSteamPath();
@@ -199,6 +203,7 @@ namespace MHW_Save_Editor
         {
             InvestigationsTabControl.Content = PopulateInvestigations(saveFile.data);
             InventoryTabControl.Content = PopulateInventory(saveFile.data);
+            SlotTabControl.Content = PopulateSlotData(saveFile.data);
             GC.Collect();
         }
 

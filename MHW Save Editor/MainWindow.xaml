@@ -18,19 +18,24 @@
                 <MenuItem Header="Backup" Click="BackupFunction" />
                 <MenuItem Header="Restore" Click="RestoreFunction" />
             </MenuItem>
-            <MenuItem Header="Slot">
+            <MenuItem Header="Slot" IsEnabled="{Binding FileLoaded}">
                 <MenuItem Name="Slot0" IsChecked="True" Header="Slot 1" Click="SetSlot0Active" />
                 <MenuItem Name="Slot1" Header="Slot 2" Click="SetSlot1Active" />
                 <MenuItem Name="Slot2" Header="Slot 3" Click="SetSlot2Active" />
                 <MenuItem Header="Reset Memory" Click="clearMem" />
             </MenuItem>
-            <MenuItem Header="Edit" ItemsSource = "{Binding EditOptions}" Click = "EditMenuItem_Click"/>
-            <MenuItem Header="Tools" ItemsSource = "{Binding ToolsOptions}" Click = "ToolsMenuItem_Click"/>
+            <MenuItem Header="Edit" ItemsSource = "{Binding EditOptions}" Click = "EditMenuItem_Click"  IsEnabled="{Binding FileLoaded}"/>
+            <MenuItem Header="Tools" ItemsSource = "{Binding ToolsOptions}" Click = "ToolsMenuItem_Click"  IsEnabled="{Binding FileLoaded}"/>
         </Menu>
         <Grid>
             <TabControl Name = "TabControl" SelectionChanged = "TabControl_SelectionChanged">
                 <TabItem Header="General">
                     <local:GeneralTab x:Name="GeneralTabControl" SteamLabelDoubleClicked="EditSteamLabel"/>
+                </TabItem>
+                <TabItem Header="Information">
+                    <Grid>
+                        <ContentControl Name="SlotTabControl"/>
+                    </Grid>
                 </TabItem>
                 <!-- Investigations ================================================================================-->
                 <TabItem Header="Investigations">

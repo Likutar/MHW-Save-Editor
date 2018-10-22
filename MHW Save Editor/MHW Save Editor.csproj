@@ -40,8 +40,8 @@
       <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.0.1, Culture=neutral, PublicKeyToken=d9452de2c18e9148">
+      <HintPath>..\packages\Uno.GalaSoft.MvvmLight.5.4.0-uno.134\lib\netstandard2.0\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
@@ -103,6 +103,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainWindowSlot.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="InputBox.xaml.cs">
       <DependentUpon>InputBox.xaml</DependentUpon>
@@ -123,7 +126,6 @@
     <Compile Include="src\Data\NotifyUIBase.cs" />
     <Compile Include="src\FileFormat\GenericFile.cs" />
     <Compile Include="src\FileFormat\SaveFile.cs" />
-    <Compile Include="src\InventoryEditing\Inventory.cs" />
     <Compile Include="src\InventoryEditing\InventoryArea.cs" />
     <Compile Include="src\InventoryEditing\InventoryAreas.xaml.cs">
       <DependentUpon>InventoryAreas.xaml</DependentUpon>
@@ -134,12 +136,16 @@
     <Compile Include="src\InventoryEditing\InventoryContentsView.xaml.cs">
       <DependentUpon>InventoryContentsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\InventoryEditing\InventorySlot.cs" />
     <Compile Include="src\InventoryEditing\InventoryView.xaml.cs">
       <DependentUpon>InventoryView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\InventoryEditing\Item.cs" />
     <Compile Include="src\InventoryEditing\ItemDescriptionView.xaml.cs">
       <DependentUpon>ItemDescriptionView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\InventoryEditing\ItemList.cs" />
+    <Compile Include="src\InventoryEditing\MasterItemList.cs" />
     <Compile Include="src\InventoryEditing\SlotView.xaml.cs">
       <DependentUpon>SlotView.xaml</DependentUpon>
     </Compile>
@@ -158,6 +164,14 @@
       <DependentUpon>InvestigationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\InvestigationEditing\MonsterIconConverter.cs" />
+    <Compile Include="src\SlotEditing\CharacterSlot.cs" />
+    <Compile Include="src\SlotEditing\CharacterSlotViewModel.cs" />
+    <Compile Include="src\SlotEditing\SlotView.xaml.cs">
+      <DependentUpon>SlotView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\SlotEditing\SlotViewModel.cs">
+      <DependentUpon>SlotView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\Support\DataGridRowBehavior.cs" />
     <Compile Include="src\Support\RowToIndexConverter.cs" />
     <Compile Include="src\Support\ScrollDataGridRowIntoView.cs" />
@@ -169,6 +183,9 @@
     </Compile>
     <Compile Include="src\Tabs\InvestigationsTab.xaml.cs">
       <DependentUpon>InvestigationsTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\Tabs\SlotTab.xaml.cs">
+      <DependentUpon>SlotTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\Utility\ArraySegmentWrapper.cs" />
     <Compile Include="src\Utility\BoyerMoore.cs" />
@@ -195,9 +212,11 @@
     <Page Include="src\InventoryEditing\SlotView.xaml" />
     <Page Include="src\InvestigationEditing\Boxstore.xaml" />
     <Page Include="src\InvestigationEditing\InvestigationView.xaml" />
+    <Page Include="src\SlotEditing\SlotView.xaml" />
     <Page Include="src\Tabs\GeneralTab.xaml" />
     <Page Include="src\Tabs\InventoryTab.xaml" />
     <Page Include="src\Tabs\InvestigationsTab.xaml" />
+    <Page Include="src\Tabs\SlotTab.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -233,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="License.txt" />
     <Resource Include="src\Resources\MonsterIcons\Temper.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

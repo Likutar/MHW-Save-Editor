@@ -12,18 +12,18 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="InputBox.xaml" t="Include" />
         <e p="InputBox.xaml.cs" t="Include" />
+        <e p="License.txt" t="Include" />
         <e p="MainWindow.xaml" t="Include" />
         <e p="MainWindow.xaml.cs" t="Include" />
         <e p="MainWindowGeneral.xaml.cs" t="Include" />
         <e p="MainWindowInventory.cs" t="Include" />
         <e p="MainWindowInvestigation.xaml.cs" t="Include" />
         <e p="MainWindowPrompts.xaml.cs" t="Include" />
+        <e p="MainWindowSlot.cs" t="Include" />
         <e p="MHW Save Editor.csproj" t="IncludeRecursive" />
-        <e p="MoreLinq" t="Include">
-          <e p="MoreEnumerable.Zip.cs" t="Include" />
-        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
           <e p="Resources.Designer.cs" t="Include" />
@@ -44,17 +44,20 @@
             <e p="SaveFile.cs" t="Include" />
           </e>
           <e p="InventoryEditing" t="Include">
-            <e p="Inventory.cs" t="Include" />
             <e p="InventoryArea.cs" t="Include" />
             <e p="InventoryAreas.xaml" t="Include" />
             <e p="InventoryAreas.xaml.cs" t="Include" />
             <e p="InventoryAreasViewModel.cs" t="Include" />
             <e p="InventoryContentsView.xaml" t="Include" />
             <e p="InventoryContentsView.xaml.cs" t="Include" />
+            <e p="InventorySlot.cs" t="Include" />
             <e p="InventoryView.xaml" t="Include" />
             <e p="InventoryView.xaml.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="ItemDescriptionView.xaml" t="Include" />
             <e p="ItemDescriptionView.xaml.cs" t="Include" />
+            <e p="ItemList.cs" t="Include" />
+            <e p="MasterItemList.cs" t="Include" />
             <e p="SlotView.xaml" t="Include" />
             <e p="SlotView.xaml.cs" t="Include" />
           </e>
@@ -545,6 +548,13 @@
             </e>
             <e p="ResourcesDictionary.xaml" t="Include" />
           </e>
+          <e p="SlotEditing" t="Include">
+            <e p="CharacterSlot.cs" t="Include" />
+            <e p="CharacterSlotViewModel.cs" t="Include" />
+            <e p="SlotView.xaml" t="Include" />
+            <e p="SlotView.xaml.cs" t="Include" />
+            <e p="SlotViewModel.cs" t="Include" />
+          </e>
           <e p="Support" t="Include">
             <e p="DataGridRowBehavior.cs" t="Include" />
             <e p="RowToIndexConverter.cs" t="Include" />
@@ -557,6 +567,8 @@
             <e p="InventoryTab.xaml.cs" t="Include" />
             <e p="InvestigationsTab.xaml" t="Include" />
             <e p="InvestigationsTab.xaml.cs" t="Include" />
+            <e p="SlotTab.xaml" t="Include" />
+            <e p="SlotTab.xaml.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="ArraySegmentWrapper.cs" t="Include" />

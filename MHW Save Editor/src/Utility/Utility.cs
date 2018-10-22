@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -130,6 +131,30 @@ namespace MHW_Save_Editor
         public static IEnumerable<T> Apply<T, G>(this List<Func<G, T>> mapping, G argument)
         {
             return mapping.Select(map => map(argument));
+        }
+        
+        public static string Truncate(this string str, int maxLength)
+        {
+            if (string.IsNullOrEmpty(str))
+                return str;
+            return str.Substring(0, Math.Min(str.Length, maxLength));
+        }
+        
+        public static char[] ToFixedSizeCharArray(this string str, int maxLength)
+        {
+            char[] result = new char[maxLength];
+            for (int i = 0; i < str.Length; i++)
+            {
+                result[i] = str[i];
+            }
+            return result;
+        }
+        
+        public static string DecodeUTF8( this byte[] buffer )
+        {
+            int count = Array.IndexOf<byte>( buffer, 0, 0 );
+            if( count < 0 ) count = buffer.Length;
+            return Encoding.UTF8.GetString( buffer, 0, count );
         }
     }
     
