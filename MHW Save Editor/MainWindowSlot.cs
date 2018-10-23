@@ -20,5 +20,15 @@ namespace MHW_Save_Editor
             Application.Current.Resources["CharacterSlotData"] = new CharacterSlotViewModel(Slot);
             return new SlotTab();
         }
+
+        private void CommitSlot()
+        {
+            int offset = CharacterSlot.SaveSlotOffset;
+            int size = CharacterSlot.SaveSize;
+            int current = Properties.Settings.Default.activeSlot;
+            CharacterSlotViewModel source =
+                (CharacterSlotViewModel) Application.Current.Resources["CharacterSlotData"];
+            source.Commit(saveFile.data, offset+size*current);
+        }
     }
 }

@@ -82,6 +82,7 @@ namespace MHW_Save_Editor
                     {
                         CommitInvestigations();
                         CommitInventory();
+                        CommitSlot();
                         saveFile.Save(saveFileDialog.FileName, !(Path.GetExtension(saveFileDialog.FileName) == ".bin"));
                         MessageBox.Show("File saved.", "Save", MessageBoxButton.OK);
                     }
@@ -222,7 +223,7 @@ namespace MHW_Save_Editor
             {
                 switch(TabControl.SelectedIndex)
                 {
-                    case 1:
+                    case 2:
                         return new ObservableCollection<string>(InvestigationList_EditMenu);
                     default:
                         return new ObservableCollection<string>();
@@ -236,7 +237,7 @@ namespace MHW_Save_Editor
             {
                 switch (TabControl.SelectedIndex)
                 {
-                    case 1:
+                    case 2:
                         return new ObservableCollection<string>(InvestigationList_ToolsMenu);
                     default:
                         return new ObservableCollection<string>();
@@ -256,7 +257,7 @@ namespace MHW_Save_Editor
                 case (0):
                     GeneralEditHandler(command);
                     break;
-                case (1):
+                case (2):
                     InvestigationsEditHandler(command);
                     break;
             }
@@ -269,7 +270,7 @@ namespace MHW_Save_Editor
                 case (0):
                     GeneralToolsHandler(command);
                     break;
-                case (1):
+                case (2):
                     InvestigationsToolsHandler(command);
                     break;
             }

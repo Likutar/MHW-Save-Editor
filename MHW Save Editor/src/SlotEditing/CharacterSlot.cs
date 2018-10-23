@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Save_Editor.InventoryEditing;
 using MHW_Save_Editor.InvestigationEditing;
 
@@ -24,7 +25,7 @@ namespace MHW_Save_Editor.SaveSlot
         public UInt32 ResearchPoints;
         public UInt32 HunterXP;
         public UInt32 PlayTime;
-        
+        public UInt32 Gender;
         //public HunterAppearance HunterAppearance;
         //public PalicoAppearance PalicoAppearance;
         //public GuildCard GuildCard;
@@ -44,6 +45,8 @@ namespace MHW_Save_Editor.SaveSlot
             ResearchPoints = BitConverter.ToUInt32(newdata,i);i+=4;
             HunterXP = BitConverter.ToUInt32(newdata,i);i+=4;
             PlayTime = BitConverter.ToUInt32(newdata,i);
+
+            Gender = BitConverter.ToUInt32(newdata, 0xb0);
         }
 
         private List<DLC> GetDLC(byte[] newdata)
@@ -54,6 +57,14 @@ namespace MHW_Save_Editor.SaveSlot
                 dlc.Add((DLC)BitConverter.ToUInt16(newdata,dlclocaloffset+i*2));
             }
             return dlc;
+        }
+
+        public byte[] Serialize()
+        {
+            return
+                    _HunterName.Concat(BitConverter.GetBytes(HunterRank))
+                        .Concat(BitConverter.GetBytes(Zenny)).Concat(BitConverter.GetBytes(ResearchPoints))
+                        .Concat(BitConverter.GetBytes(HunterXP)).Concat(BitConverter.GetBytes(PlayTime)).ToArray();
         }
 
         public static readonly Int32 dlclocaloffset = 0xf34b3;
