@@ -12,6 +12,7 @@ using MHW_Save_Editor.InvestigationEditing;
 using Microsoft.Win32;
 using System.Configuration;
 using MHW_Save_Editor.Properties;
+using MHW_Save_Editor.SaveSlot;
 
 namespace MHW_Save_Editor
 {
@@ -22,6 +23,31 @@ namespace MHW_Save_Editor
     {
         private SaveFile saveFile;
         private MemoryStream data;
+        
+        public bool Slot1Enabled{get=>SlotIsEnabled(0);}
+        public bool Slot2Enabled{get=>SlotIsEnabled(1);}
+        public bool Slot3Enabled{get=>SlotIsEnabled(2);}
+
+        public bool SlotIsEnabled(int slotindex)
+        {
+            if (saveFile == null) return false;
+            else
+            {
+                int offset = CharacterSlot.SaveSlotOffset;
+                int size = CharacterSlot.SaveSize;
+                int current = slotindex;
+                int activeoffset = 0xf3888;
+                return saveFile.data[offset + size * current + activeoffset] != 0;
+            }
+        }
+
+        public void RaiseSlotEnabled()
+        {
+            RaisePropertyChanged("Slot1Enabled");
+            RaisePropertyChanged("Slot2Enabled");
+            RaisePropertyChanged("Slot3Enabled");
+        }
+        
         public bool FileLoaded
         {
             get => saveFile != null;
@@ -64,6 +90,7 @@ namespace MHW_Save_Editor
             InvestigationsTabControl.Content = PopulateInvestigations(saveFile.data);
             InventoryTabControl.Content = PopulateInventory(saveFile.data);
             SlotTabControl.Content = PopulateSlotData(saveFile.data);
+            RaiseSlotEnabled();
         }
 
         private void SaveFunction(object sender, RoutedEventArgs e)

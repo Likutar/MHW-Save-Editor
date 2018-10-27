@@ -19,9 +19,9 @@
                 <MenuItem Header="Restore" Click="RestoreFunction" />
             </MenuItem>
             <MenuItem Header="Slot" IsEnabled="{Binding FileLoaded}">
-                <MenuItem Name="Slot0" IsChecked="True" Header="Slot 1" Click="SetSlot0Active" />
-                <MenuItem Name="Slot1" Header="Slot 2" Click="SetSlot1Active" />
-                <MenuItem Name="Slot2" Header="Slot 3" Click="SetSlot2Active" />
+                <MenuItem Name="Slot0" IsChecked="True" Header="Slot 1" Click="SetSlot0Active" IsEnabled="{Binding Slot1Enabled}"/>
+                <MenuItem Name="Slot1" Header="Slot 2" Click="SetSlot1Active" IsEnabled="{Binding Slot2Enabled}"/>
+                <MenuItem Name="Slot2" Header="Slot 3" Click="SetSlot2Active" IsEnabled="{Binding Slot3Enabled}"/>
                 <MenuItem Header="Reset Memory" Click="clearMem" />
             </MenuItem>
             <MenuItem Header="Edit" ItemsSource = "{Binding EditOptions}" Click = "EditMenuItem_Click"  IsEnabled="{Binding FileLoaded}"/>

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7302d10-7dc5-476b-ab1a-ada103a17aa1" name="Default Changelist" comment="">
+    <list default="true" id="f7302d10-7dc5-476b-ab1a-ada103a17aa1" name="Default Changelist" comment="Added information tab.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MHW Save Editor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MHW Save Editor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +39,7 @@
     <session id="1683850636">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="96" />
+          <entry key="project.closed" value="99" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -54,24 +51,24 @@
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="5" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="43" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.4" value="11" />
+          <entry key="project.open.time.4" value="12" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="6" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="102" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="00000002" value="2" />
           <entry key="config" value="17" />
-          <entry key="cs" value="672" />
+          <entry key="cs" value="678" />
           <entry key="csproj" value="5" />
           <entry key="gitignore" value="3" />
           <entry key="ico" value="1" />
@@ -83,13 +80,13 @@
           <entry key="sln" value="1" />
           <entry key="targets" value="6" />
           <entry key="txt" value="2" />
-          <entry key="xaml" value="287" />
+          <entry key="xaml" value="288" />
           <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="672" />
+          <entry key="C#" value="678" />
           <entry key="Config" value="17" />
           <entry key="Csproj" value="5" />
           <entry key="Image" value="2" />
@@ -98,7 +95,7 @@
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Resources" value="2" />
           <entry key="Solution File" value="1" />
-          <entry key="XAML" value="287" />
+          <entry key="XAML" value="288" />
           <entry key="XML" value="19" />
         </counts>
       </usages-collector>
@@ -106,23 +103,23 @@
         <counts>
           <entry key="C# Console" value="752" />
           <entry key="config" value="137" />
-          <entry key="cs" value="74195" />
+          <entry key="cs" value="74547" />
           <entry key="csproj" value="49" />
           <entry key="gitignore" value="45" />
           <entry key="json" value="49" />
           <entry key="txt" value="3936" />
-          <entry key="xaml" value="13970" />
+          <entry key="xaml" value="13988" />
           <entry key="xml" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="74947" />
+          <entry key="C#" value="75299" />
           <entry key="Config" value="137" />
           <entry key="Csproj" value="49" />
           <entry key="JSON" value="49" />
           <entry key="PLAIN_TEXT" value="3981" />
-          <entry key="XAML" value="13970" />
+          <entry key="XAML" value="13988" />
           <entry key="XML" value="58" />
         </counts>
       </usages-collector>
@@ -130,90 +127,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
+            <state relative-caret-position="303">
+              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
-                <marker date="1540254639176" expanded="true" signature="0:5053" ph="&lt;&lt;UserControl.Resources&gt;&#10;        &lt;local:EnumBooleanConverter x:Key=&quot;EnumBooleanConverter&quot; /&gt;&#10;    &lt;/UserControl.Resources&gt; &lt;Grid&gt;&#10;        &lt;ListBox Name=&quot;ListBox&quot; HorizontalContentAlignment=&quot;Stretch&quot; DataContext=&quot;{Binding VisibleSlot}&quot;&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;        &lt;/ListBox&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="591:711" ph="&lt;&lt;local:EnumBooleanConverter x:Key=&quot;EnumBooleanConverter&quot; /&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="716:5038" ph="&lt;&lt;ListBox Name=&quot;ListBox&quot; HorizontalContentAlignment=&quot;Stretch&quot; DataContext=&quot;{Binding VisibleSlot}&quot;&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;        &lt;/ListBox&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="731:5026" ph="&lt;&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="841:1149" ph="&lt;&lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="1162:1539" ph="&lt;&lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="1293:1513" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="1552:2019" ph="&lt;&lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="1677:1928" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="2032:2453" ph="&lt;&lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="2167:2427" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="2466:2875" ph="&lt;&lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="2595:2849" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="2888:4279" ph="&lt;&lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="3016:3325" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="3434:3743" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="3852:4161" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="4292:5007" ph="&lt;&lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt; &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="4425:4656" ph="&lt;.../&gt;" />
-                <marker date="1540254639176" expanded="true" signature="4748:4981" ph="&lt;.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowInvestigation.xaml.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <marker date="1539917768988" expanded="false" signature="6:404" ph="..." />
-                <marker date="1539917768988" expanded="true" signature="431:12633" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="469:12631" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="579:1257" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="1328:1695" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="1518:1661" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="1778:1872" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="1937:3254" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="2018:3244" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="2358:2525" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="3332:3453" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="3527:5110" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="3670:4025" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="4080:5100" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="5145:5285" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="5328:5486" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="5530:5742" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="5811:6111" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="5862:6101" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="6160:6590" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="6233:6580" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="6635:6873" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="6971:8169" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="7197:7661" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="7301:7647" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="7360:7629" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="7678:8159" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="7712:7989" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8028:8145" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8248:9121" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8475:9111" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8509:8924" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8598:8861" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8728:8839" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="8963:9080" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="9166:9262" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="9306:9402" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="9523:10363" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="10033:10353" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="10439:10903" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="10579:10843" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="10957:11476" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="11344:11466" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="11534:11905" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="11758:11833" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="11963:12616" ph="{...}" />
-                <marker date="1539917768988" expanded="true" signature="12165:12460" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="6:425" ph="..." />
+                <marker date="1540674056257" expanded="true" signature="452:12016" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="459:537" ph="/// Interaction logic for MainWindow.xaml ... " />
+                <marker date="1540674056257" expanded="true" signature="606:12009" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="912:1303" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="987:1293" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="1343:1513" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="1553:1610" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="1639:1776" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="1846:3289" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="2213:2378" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="2409:2571" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="3358:4649" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="3757:4639" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="3809:4481" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="3851:4230" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="4277:4463" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="4502:4624" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="4720:5575" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="5040:5565" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="5074:5336" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="5375:5551" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="5647:7491" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="6433:6959" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="6475:6705" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="6752:6941" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="7005:7481" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="7039:7251" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="7290:7467" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="7562:7711" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="7782:7931" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="8002:8151" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="8221:8658" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="8723:8769" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="8836:9114" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9200:9395" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9250:9385" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9452:9818" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9478:9808" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9541:9794" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9876:10244" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9902:10234" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="9966:10220" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10297:10308" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10361:10372" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10446:10736" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10487:10726" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10803:11095" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="10844:11085" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="11170:11337" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="11413:11581" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="11728:12003" ph="{...}" />
+                <marker date="1540674056257" expanded="true" signature="11890:11993" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -222,104 +194,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="153">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <marker date="1540256689655" expanded="false" signature="6:188" ph="..." />
-                <marker date="1540256689655" expanded="true" signature="224:6139" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="257:6137" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="432:530" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="902:1284" ph="/* public HunterAppearance HunterAppearance; ... */" />
-                <marker date="1540256689655" expanded="true" signature="1371:1839" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="1889:2133" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="1990:2099" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="2168:2505" ph="{...}" />
-                <marker date="1540256689655" expanded="true" signature="2646:6130" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-              <folding>
-                <marker date="1540256851306" expanded="false" signature="6:134" ph="..." />
-                <marker date="1540256851306" expanded="true" signature="173:2881" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="203:248" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="293:2451" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="401:459" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="1155:1331" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="1360:1553" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="1580:1774" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="1793:2175" ph="/* public HunterAppearance HunterAppearance; ... */" />
-                <marker date="1540256851306" expanded="true" signature="2283:2445" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="2512:2879" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="2618:2682" ph="{...}" />
-                <marker date="1540256851306" expanded="true" signature="2787:2873" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="214" column="52" lean-forward="true" selection-start-line="214" selection-start-column="52" selection-end-line="214" selection-end-column="52" />
-              <folding>
-                <marker date="1540257063064" expanded="false" signature="6:393" ph="..." />
-                <marker date="1540257063064" expanded="true" signature="420:11112" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="427:505" ph="/// Interaction logic for MainWindow.xaml ... " />
-                <marker date="1540257063064" expanded="true" signature="574:11105" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="681:738" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="767:904" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="974:2385" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="1341:1506" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="1537:1699" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="2454:3745" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="2853:3735" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="2905:3577" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="2947:3326" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="3373:3559" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="3598:3720" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="3816:4671" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="4136:4661" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="4170:4432" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="4471:4647" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="4743:6587" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="5529:6055" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="5571:5801" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="5848:6037" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="6101:6577" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="6135:6347" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="6386:6563" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="6658:6807" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="6878:7027" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="7098:7247" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="7317:7754" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="7819:7865" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="7932:8210" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8296:8491" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8346:8481" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8548:8914" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8574:8904" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8637:8890" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8972:9340" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="8998:9330" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9062:9316" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9393:9404" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9457:9468" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9542:9832" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9583:9822" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9899:10191" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="9940:10181" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="10266:10433" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="10509:10677" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="10824:11099" ph="{...}" />
-                <marker date="1540257063064" expanded="true" signature="10986:11089" ph="{...}" />
+                <marker date="1540257675482" expanded="false" signature="6:188" ph="..." />
+                <marker date="1540257675482" expanded="true" signature="224:6139" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="257:6137" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="432:530" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="902:1284" ph="/* public HunterAppearance HunterAppearance; ... */" />
+                <marker date="1540257675482" expanded="true" signature="1371:1839" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="1889:2133" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="1990:2099" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="2168:2505" ph="{...}" />
+                <marker date="1540257675482" expanded="true" signature="2646:6130" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -328,14 +215,110 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="17" selection-end-column="65" />
               <folding>
-                <marker date="1540256067366" expanded="true" signature="6:225" ph="..." />
-                <marker date="1540256067366" expanded="true" signature="252:1226" ph="{...}" />
-                <marker date="1540256067366" expanded="true" signature="290:1224" ph="{...}" />
-                <marker date="1540256067366" expanded="true" signature="361:795" ph="{...}" />
-                <marker date="1540256067366" expanded="true" signature="830:1218" ph="{...}" />
+                <marker date="1540257674428" expanded="false" signature="6:225" ph="..." />
+                <marker date="1540257674428" expanded="true" signature="252:1226" ph="{...}" />
+                <marker date="1540257674428" expanded="true" signature="290:1224" ph="{...}" />
+                <marker date="1540257674428" expanded="true" signature="361:795" ph="{...}" />
+                <marker date="1540257674428" expanded="true" signature="830:1218" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="23" column="103" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
+              <folding>
+                <marker date="1540673676719" expanded="true" signature="0:3121" ph="&lt;&lt;DockPanel Name=&quot;Root&quot; xmlns:local=&quot;clr-namespace:MHW_Save_Editor&quot;&gt;&#10;        &lt;Menu Width=&quot;Auto&quot; Height=&quot;20&quot; DockPanel.Dock=&quot;Top&quot;&gt;&#10;            &lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;            &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;        &lt;/Menu&gt;&#10;        &lt;Grid&gt;&#10;            &lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;&#10;        &lt;/Grid&gt;&#10;    &lt;/DockPanel&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="659:3111" ph="&lt;&lt;Menu Width=&quot;Auto&quot; Height=&quot;20&quot; DockPanel.Dock=&quot;Top&quot;&gt;&#10;            &lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;            &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;        &lt;/Menu&gt; &lt;Grid&gt;&#10;            &lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;&#10;        &lt;/Grid&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="735:1935" ph="&lt;&lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt; &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt; &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt; &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="800:1114" ph="&lt;&lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt; &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt; &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt; &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="1127:1638" ph="&lt;&lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt; &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt; &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt; &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="1944:3094" ph="&lt;&lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="1963:3078" ph="&lt;&lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2061:2222" ph="&lt;&lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2239:2415" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2290:2388" ph="&lt;&lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2552:2741" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2606:2714" ph="&lt;&lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2873:3052" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1540673676719" expanded="true" signature="2922:3025" ph="&lt;&lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryArea.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+              <folding>
+                <marker date="1540257674449" expanded="false" signature="6:159" ph="..." />
+                <marker date="1540257674449" expanded="true" signature="203:1907" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="251:1900" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="390:440" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="519:1161" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="810:1055" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="1200:1427" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="1312:1390" ph="{...}" />
+                <marker date="1540257674449" expanded="true" signature="1618:1892" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemList.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <marker date="1540257674472" expanded="false" signature="6:159" ph="..." />
+                <marker date="1540257674472" expanded="true" signature="203:1786" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="329:1784" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="501:819" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="1359:1778" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="1395:1768" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+              <folding>
+                <marker date="1540257674472" expanded="true" signature="6:112" ph="..." />
+                <marker date="1540257674472" expanded="true" signature="156:1099" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="206:1097" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="313:575" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="713:1006" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="736:837" ph="/* Explicit static constructor to tell C## compiler ... */" />
+                <marker date="1540257674472" expanded="true" signature="865:893" ph="{...}" />
+                <marker date="1540257674472" expanded="true" signature="1039:1091" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+              <folding>
+                <marker date="1540257674464" expanded="false" signature="6:83" ph="..." />
+                <marker date="1540257674464" expanded="true" signature="127:2659" ph="{...}" />
+                <marker date="1540257674464" expanded="true" signature="168:2657" ph="{...}" />
+                <marker date="1540257674464" expanded="true" signature="216:261" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -345,15 +328,12 @@
         <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowInventory.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="63" />
+              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
-                <marker date="1539917768928" expanded="false" signature="6:265" ph="..." />
-                <marker date="1539917768928" expanded="true" signature="292:2168" ph="{...}" />
-                <marker date="1539917768928" expanded="true" signature="330:2166" ph="{...}" />
-                <marker date="1539917768928" expanded="true" signature="530:1135" ph="{...}" />
-                <marker date="1539917768928" expanded="true" signature="1213:1581" ph="{...}" />
-                <marker date="1539917768928" expanded="true" signature="1620:2151" ph="{...}" />
-                <marker date="1539917768928" expanded="true" signature="1994:2141" ph="{...}" />
+                <marker date="1540257674423" expanded="false" signature="6:265" ph="..." />
+                <marker date="1540257674423" expanded="true" signature="330:2166" ph="{...}" />
+                <marker date="1540257674423" expanded="true" signature="2102:2141" ph="{...}" />
+                <marker date="1540257674423" expanded="true" signature="2102:2151" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -362,7 +342,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowGeneral.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
+            <state relative-caret-position="136">
               <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
               <folding>
                 <marker date="1538109494933" expanded="false" signature="7:55" ph="..." />
@@ -382,8 +362,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Concat</find>
-      <find>Seri</find>
       <find>_EmptyIcon</find>
       <find>description</find>
       <find>name</find>
@@ -412,6 +390,8 @@
       <find>Import Projec</find>
       <find>CharacterSlotData</find>
       <find>CommitInventory</find>
+      <find>SaveSlotOffset</find>
+      <find>SetSlot1</find>
     </findStrings>
     <replaceStrings>
       <replace>{\n_inv.Set(\1)\(value\);\nRaisePropertyChanged(\1);}</replace>
@@ -460,20 +440,16 @@
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Crypto/Cipher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowGeneral.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Utility/Utility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/FileFormat/GenericFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/FileFormat/SaveFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/SelectionChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowPrompts.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/threading/executioncontext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/threading/threadpool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/Investigation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryAreasViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/InvestigationViewModel(BL).cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Core/CSharp/System/Windows/RoutedEventHandlerInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryArea.cs" root0="FORCE_HIGHLIGHTING" />
@@ -483,16 +459,16 @@
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Utility/ArraySegmentWrapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Markup/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/TabContent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/reflection/targetinvocationexception.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/threading/monitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/collections/stack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/arraysegment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/array.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Colours.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/runtime/compilerservices/jithelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Utility/BoyerMoore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/fx/src/misc/SecurityUtils.cs" root0="SKIP_HIGHLIGHTING" />
@@ -518,6 +494,7 @@
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemDescriptionView.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Base/System/Windows/WeakEventManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryAreas.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/UserControl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/ContentControl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/Control.cs" root0="SKIP_HIGHLIGHTING" />
@@ -525,11 +502,10 @@
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Support/RowToIndexConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/fx/src/Core/System/Linq/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryAreas.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/BoxIconConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryContentsViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/SlotView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InputBox.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/SlotView.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InputBox.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryContentsView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryContentsView.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -538,18 +514,13 @@
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/App.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InvestigationsTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventorySlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/collections/generic/dictionary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/GeneralTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/collections/objectmodel/collection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/MS/Internal/Data/PropertyPathWorker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/MonsterIconConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/MS/Internal/Data/ClrBindingWorker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryView.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Data/BindingExpression.cs" root0="SKIP_HIGHLIGHTING" />
@@ -558,23 +529,34 @@
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/App.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InventoryTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InventoryTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/GeneralTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Base/System/Windows/DependencyObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/TabContent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InventoryTab.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/string.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Data/Colour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/ndp/clr/src/BCL/system/bitconverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Data/NotifyUIBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventorySlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/Primitives/Selector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Data/Person.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Framework/System/Windows/Controls/ComboBox.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Dictionary1.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/BoxIconConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/EditRow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InvestigationsTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/InvestigationEditing/MonsterIconConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InvestigationsTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/People.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/People.xaml.cs" root0="FORCE_HIGHLIGHTING" />
@@ -582,17 +564,16 @@
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/PersonView.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/PersonView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/PersonViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicrosoftSample/Wpf_Dynamic_XAML_Composed_View/Support/DataGridRowBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InventoryTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Core/CSharp/System/Windows/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Core/CSharp/System/Windows/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/02558.00/Source/wpf/src/Core/CSharp/System/Windows/RouteItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InvestigationTabUserControl.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InvestigationTabUserControl.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Resources/ResourcesDictionary.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/GeneralTab.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/GeneralTab.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InvestigationUserControl.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MHW Save Editor/src/Tabs/InvestigationsTab.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MHW Save Editor/InvestigationUserControl.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -639,15 +620,15 @@
         <option value="$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml.cs" />
-        <option value="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/Tabs/SlotTab.xaml" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotViewModel.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/Utility/Utility.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/SlotView.xaml" />
         <option value="$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs" />
-        <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" />
         <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlotViewModel.cs" />
+        <option value="$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs" />
+        <option value="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml" />
         <option value="$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs" />
       </list>
     </option>
@@ -658,11 +639,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="517" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -671,7 +652,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -695,7 +675,7 @@
               <item name="MHW Save Editor" type="24d0babc:SolutionExplorerModelNode" />
               <item name="MHW Save Editor" type="24d0babc:SolutionExplorerModelNode" />
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SlotEditing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="InventoryEditing" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -703,7 +683,6 @@
               <item name="MHW Save Editor" type="24d0babc:SolutionExplorerModelNode" />
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
               <item name="SlotEditing" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SlotView.xaml" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -716,6 +695,7 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -898,6 +878,9 @@
       <workItem from="1540173296318" duration="17791000" />
       <workItem from="1540193473463" duration="2582000" />
       <workItem from="1540252186958" duration="4970000" />
+      <workItem from="1540423338338" duration="609000" />
+      <workItem from="1540442107389" duration="1241000" />
+      <workItem from="1540671774108" duration="2400000" />
     </task>
     <task id="LOCAL-00001" summary="-Fixed checksum algorithm, it works correctly now.&#10;-Fixed encryption algorithm, it works correctly now.&#10;-Modified GUI in preparation for added editors.">
       <created>1536902291909</created>
@@ -1211,7 +1194,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="612137000" />
+    <option name="totallyTimeSpent" value="617139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1223,15 +1206,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="1912" y="517" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24212034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" weight="0.26681128" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49733475" weight="0.37201735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.26415095" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49733475" weight="0.46226415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.329718" />
@@ -1242,7 +1225,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5010661" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4989339" weight="0.32104123" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4989339" weight="0.3207547" />
       <window_info anchor="bottom" id="XAML Preview" order="15" weight="0.329718" />
       <window_info anchor="bottom" id="Stacktrace" order="16" weight="0.3308026" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.329718" />
@@ -1410,20 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="13" column="112" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor.sln">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1434,20 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemList.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryAreas.xaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryArea.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1483,13 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="36" column="60" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1557,20 +1509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <marker date="1539917768928" expanded="true" signature="0:78" ph="/* Credits to Paul Rohde http://blogs.interknowlogy.com/author/paulrohde ... */" />
-            <marker date="1539917768928" expanded="false" signature="85:187" ph="..." />
-            <marker date="1539917768928" expanded="true" signature="229:2117" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="289:433" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="519:2111" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="767:901" ph="/* Load from Embedded Resources - This function is not called if the Assembly is already ... */" />
-            <marker date="1539917768928" expanded="true" signature="1035:2007" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1067:1210" ph="/* 99% of cases will only have one matching item, but if you don't, ... */" />
-            <marker date="1539917768928" expanded="true" signature="1354:1993" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1563:1721" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1761:1842" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1894:1975" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1578,12 +1516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <marker date="1540190693114" expanded="false" signature="6:49" ph="..." />
-            <marker date="1540190693114" expanded="true" signature="88:371" ph="{...}" />
-            <marker date="1540190693114" expanded="true" signature="136:369" ph="{...}" />
-            <marker date="1540190693114" expanded="true" signature="238:362" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1591,11 +1523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <marker date="1540189530698" expanded="true" signature="0:657" ph="&lt;&lt;Grid&gt;&#10;        &lt;ContentControl Name=&quot;InvestigationListing&quot;&gt;&#10;            &lt;local:SlotView/&gt;&#10;        &lt;/ContentControl&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
-            <marker date="1540189530698" expanded="true" signature="515:642" ph="&lt;&lt;ContentControl Name=&quot;InvestigationListing&quot;&gt;&#10;            &lt;local:SlotView/&gt;&#10;        &lt;/ContentControl&gt;.../&gt;" />
-            <marker date="1540189530698" expanded="true" signature="530:630" ph="&lt;&lt;local:SlotView/&gt;.../&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1603,12 +1530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding>
-            <marker date="1540193410356" expanded="true" signature="69:381" ph="{...}" />
-            <marker date="1540193410356" expanded="true" signature="119:379" ph="{...}" />
-            <marker date="1540193410356" expanded="true" signature="151:373" ph="{...}" />
-            <marker date="1540193410356" expanded="true" signature="279:363" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1616,61 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
-          <folding>
-            <marker date="1540254639176" expanded="true" signature="0:5053" ph="&lt;&lt;UserControl.Resources&gt;&#10;        &lt;local:EnumBooleanConverter x:Key=&quot;EnumBooleanConverter&quot; /&gt;&#10;    &lt;/UserControl.Resources&gt; &lt;Grid&gt;&#10;        &lt;ListBox Name=&quot;ListBox&quot; HorizontalContentAlignment=&quot;Stretch&quot; DataContext=&quot;{Binding VisibleSlot}&quot;&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;        &lt;/ListBox&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="591:711" ph="&lt;&lt;local:EnumBooleanConverter x:Key=&quot;EnumBooleanConverter&quot; /&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="716:5038" ph="&lt;&lt;ListBox Name=&quot;ListBox&quot; HorizontalContentAlignment=&quot;Stretch&quot; DataContext=&quot;{Binding VisibleSlot}&quot;&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;&#10;        &lt;/ListBox&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="731:5026" ph="&lt;&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;                &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;&#10;            &lt;/StackPanel&gt; &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;&#10;                &lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;                &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt;&#10;                &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;&#10;            &lt;/StackPanel&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="841:1149" ph="&lt;&lt;TextBlock Text=&quot;Hunter Name: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;TextBox Text=&quot;{Binding HunterName}&quot; UndoLimit = &quot;1&quot; MaxLength = &quot;64&quot; BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot; SelectionBrush=&quot;Transparent&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="1162:1539" ph="&lt;&lt;TextBlock Text=&quot;Hunter Rank: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterRank}&quot;&#10;                                    Minimum = &quot;0&quot; Maximum = &quot;999&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="1293:1513" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="1552:2019" ph="&lt;&lt;TextBlock Text=&quot;Zenny: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding Zenny}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;z&quot; VerticalAlignment=&quot;Center&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="1677:1928" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="2032:2453" ph="&lt;&lt;TextBlock Text=&quot;Research Points: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding ResearchPoints}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="2167:2427" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="2466:2875" ph="&lt;&lt;TextBlock Text=&quot;Hunter XP: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding HunterXP}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;2147483647&quot; FormatString=&quot;N0&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="2595:2849" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="2888:4279" ph="&lt;&lt;TextBlock Text=&quot;Playtime: &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding hours}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;9999&quot; FormatString=&quot;N0&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;h&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding minutes}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;m&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt; &lt;xctk:IntegerUpDown Text=&quot;{Binding seconds}&quot; ShowButtonSpinner = &quot;False&quot; &#10;                                    Minimum = &quot;0&quot; Maximum = &quot;59&quot; FormatString=&quot;00&quot;&#10;                                    HorizontalAlignment=&quot;Right&quot;&#10;                                    BorderBrush=&quot;Transparent&quot; Background=&quot;Transparent&quot;/&gt; &lt;TextBlock Text=&quot;s&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Left&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="3016:3325" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="3434:3743" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="3852:4161" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="4292:5007" ph="&lt;&lt;TextBlock Text=&quot;Gender:    Male&quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Male}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt; &lt;TextBlock Text=&quot;    Female &quot; VerticalAlignment=&quot;Center&quot;/&gt; &lt;RadioButton IsChecked=&quot;{Binding Gender, Converter={StaticResource EnumBooleanConverter}, &#10;                ConverterParameter={x:Static local:GenderEnum.Female}, Mode=TwoWay}&quot;&#10;                             VerticalAlignment=&quot;Bottom&quot;/&gt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="4425:4656" ph="&lt;.../&gt;" />
-            <marker date="1540254639176" expanded="true" signature="4748:4981" ph="&lt;.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <marker date="1540256067366" expanded="true" signature="6:225" ph="..." />
-            <marker date="1540256067366" expanded="true" signature="252:1226" ph="{...}" />
-            <marker date="1540256067366" expanded="true" signature="290:1224" ph="{...}" />
-            <marker date="1540256067366" expanded="true" signature="361:795" ph="{...}" />
-            <marker date="1540256067366" expanded="true" signature="830:1218" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <marker date="1540256689655" expanded="false" signature="6:188" ph="..." />
-            <marker date="1540256689655" expanded="true" signature="224:6139" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="257:6137" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="432:530" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="902:1284" ph="/* public HunterAppearance HunterAppearance; ... */" />
-            <marker date="1540256689655" expanded="true" signature="1371:1839" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="1889:2133" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="1990:2099" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="2168:2505" ph="{...}" />
-            <marker date="1540256689655" expanded="true" signature="2646:6130" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1678,99 +1544,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-          <folding>
-            <marker date="1540256851306" expanded="false" signature="6:134" ph="..." />
-            <marker date="1540256851306" expanded="true" signature="173:2881" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="203:248" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="293:2451" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="401:459" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="1155:1331" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="1360:1553" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="1580:1774" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="1793:2175" ph="/* public HunterAppearance HunterAppearance; ... */" />
-            <marker date="1540256851306" expanded="true" signature="2283:2445" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="2512:2879" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="2618:2682" ph="{...}" />
-            <marker date="1540256851306" expanded="true" signature="2787:2873" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowInvestigation.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="374">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <marker date="1539917768988" expanded="false" signature="6:404" ph="..." />
-            <marker date="1539917768988" expanded="true" signature="431:12633" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="469:12631" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="579:1257" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="1328:1695" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="1518:1661" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="1778:1872" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="1937:3254" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="2018:3244" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="2358:2525" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="3332:3453" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="3527:5110" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="3670:4025" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="4080:5100" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="5145:5285" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="5328:5486" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="5530:5742" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="5811:6111" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="5862:6101" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="6160:6590" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="6233:6580" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="6635:6873" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="6971:8169" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="7197:7661" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="7301:7647" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="7360:7629" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="7678:8159" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="7712:7989" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8028:8145" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8248:9121" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8475:9111" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8509:8924" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8598:8861" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8728:8839" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="8963:9080" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="9166:9262" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="9306:9402" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="9523:10363" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="10033:10353" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="10439:10903" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="10579:10843" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="10957:11476" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="11344:11466" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="11534:11905" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="11758:11833" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="11963:12616" ph="{...}" />
-            <marker date="1539917768988" expanded="true" signature="12165:12460" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowInventory.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="63" />
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
-            <marker date="1539917768928" expanded="false" signature="6:265" ph="..." />
-            <marker date="1539917768928" expanded="true" signature="292:2168" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="330:2166" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="530:1135" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1213:1581" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1620:2151" ph="{...}" />
-            <marker date="1539917768928" expanded="true" signature="1994:2141" ph="{...}" />
+            <marker date="1540257674423" expanded="false" signature="6:265" ph="..." />
+            <marker date="1540257674423" expanded="true" signature="330:2166" ph="{...}" />
+            <marker date="1540257674423" expanded="true" signature="2102:2141" ph="{...}" />
+            <marker date="1540257674423" expanded="true" signature="2102:2151" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowGeneral.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
+        <state relative-caret-position="136">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
           <folding>
             <marker date="1538109494933" expanded="false" signature="7:55" ph="..." />
@@ -1785,61 +1584,183 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/Item.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+          <folding>
+            <marker date="1540257674464" expanded="false" signature="6:83" ph="..." />
+            <marker date="1540257674464" expanded="true" signature="127:2659" ph="{...}" />
+            <marker date="1540257674464" expanded="true" signature="168:2657" ph="{...}" />
+            <marker date="1540257674464" expanded="true" signature="216:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/MasterItemList.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding>
+            <marker date="1540257674472" expanded="true" signature="6:112" ph="..." />
+            <marker date="1540257674472" expanded="true" signature="156:1099" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="206:1097" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="313:575" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="713:1006" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="736:837" ph="/* Explicit static constructor to tell C## compiler ... */" />
+            <marker date="1540257674472" expanded="true" signature="865:893" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="1039:1091" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/SlotEditing/CharacterSlot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1540257675482" expanded="false" signature="6:188" ph="..." />
+            <marker date="1540257675482" expanded="true" signature="224:6139" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="257:6137" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="432:530" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="902:1284" ph="/* public HunterAppearance HunterAppearance; ... */" />
+            <marker date="1540257675482" expanded="true" signature="1371:1839" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="1889:2133" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="1990:2099" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="2168:2505" ph="{...}" />
+            <marker date="1540257675482" expanded="true" signature="2646:6130" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/ItemList.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <marker date="1540257674472" expanded="false" signature="6:159" ph="..." />
+            <marker date="1540257674472" expanded="true" signature="203:1786" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="329:1784" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="501:819" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="1359:1778" ph="{...}" />
+            <marker date="1540257674472" expanded="true" signature="1395:1768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/src/InventoryEditing/InventoryArea.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+          <folding>
+            <marker date="1540257674449" expanded="false" signature="6:159" ph="..." />
+            <marker date="1540257674449" expanded="true" signature="203:1907" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="251:1900" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="390:440" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="519:1161" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="810:1055" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="1200:1427" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="1312:1390" ph="{...}" />
+            <marker date="1540257674449" expanded="true" signature="1618:1892" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindowSlot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <marker date="1540257674428" expanded="false" signature="6:225" ph="..." />
+            <marker date="1540257674428" expanded="true" signature="252:1226" ph="{...}" />
+            <marker date="1540257674428" expanded="true" signature="290:1224" ph="{...}" />
+            <marker date="1540257674428" expanded="true" signature="361:795" ph="{...}" />
+            <marker date="1540257674428" expanded="true" signature="830:1218" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="23" column="103" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
+          <folding>
+            <marker date="1540673676719" expanded="true" signature="0:3121" ph="&lt;&lt;DockPanel Name=&quot;Root&quot; xmlns:local=&quot;clr-namespace:MHW_Save_Editor&quot;&gt;&#10;        &lt;Menu Width=&quot;Auto&quot; Height=&quot;20&quot; DockPanel.Dock=&quot;Top&quot;&gt;&#10;            &lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;            &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;        &lt;/Menu&gt;&#10;        &lt;Grid&gt;&#10;            &lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;&#10;        &lt;/Grid&gt;&#10;    &lt;/DockPanel&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="659:3111" ph="&lt;&lt;Menu Width=&quot;Auto&quot; Height=&quot;20&quot; DockPanel.Dock=&quot;Top&quot;&gt;&#10;            &lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt;&#10;            &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;            &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;&#10;        &lt;/Menu&gt; &lt;Grid&gt;&#10;            &lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;&#10;        &lt;/Grid&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="735:1935" ph="&lt;&lt;MenuItem Header=&quot;File&quot;&gt;&#10;                &lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt;&#10;                &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;&#10;            &lt;/MenuItem&gt; &lt;MenuItem Header=&quot;Slot&quot; IsEnabled=&quot;{Binding FileLoaded}&quot;&gt;&#10;                &lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt;&#10;                &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt;&#10;                &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;&#10;            &lt;/MenuItem&gt; &lt;MenuItem Header=&quot;Edit&quot; ItemsSource = &quot;{Binding EditOptions}&quot; Click = &quot;EditMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt; &lt;MenuItem Header=&quot;Tools&quot; ItemsSource = &quot;{Binding ToolsOptions}&quot; Click = &quot;ToolsMenuItem_Click&quot;  IsEnabled=&quot;{Binding FileLoaded}&quot;/&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="800:1114" ph="&lt;&lt;MenuItem Header=&quot;Open&quot; Click=&quot;OpenFunction&quot; /&gt; &lt;MenuItem Header=&quot;Save&quot; Click=&quot;SaveFunction&quot; /&gt; &lt;MenuItem Header=&quot;Backup&quot; Click=&quot;BackupFunction&quot; /&gt; &lt;MenuItem Header=&quot;Restore&quot; Click=&quot;RestoreFunction&quot; /&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="1127:1638" ph="&lt;&lt;MenuItem Name=&quot;Slot0&quot; IsChecked=&quot;True&quot; Header=&quot;Slot 1&quot; Click=&quot;SetSlot0Active&quot; IsEnabled=&quot;{Binding Slot1Enabled}&quot;/&gt; &lt;MenuItem Name=&quot;Slot1&quot; Header=&quot;Slot 2&quot; Click=&quot;SetSlot1Active&quot; IsEnabled=&quot;{Binding Slot2Enabled}&quot;/&gt; &lt;MenuItem Name=&quot;Slot2&quot; Header=&quot;Slot 3&quot; Click=&quot;SetSlot2Active&quot; IsEnabled=&quot;{Binding Slot3Enabled}&quot;/&gt; &lt;MenuItem Header=&quot;Reset Memory&quot; Click=&quot;clearMem&quot; /&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="1944:3094" ph="&lt;&lt;TabControl Name = &quot;TabControl&quot; SelectionChanged = &quot;TabControl_SelectionChanged&quot;&gt;&#10;                &lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Investigations ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;                &lt;!-- Inventory ================================================================================--&gt;&#10;                &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;&#10;            &lt;/TabControl&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="1963:3078" ph="&lt;&lt;TabItem Header=&quot;General&quot;&gt;&#10;                    &lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Information&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Investigations&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt; &lt;TabItem Header=&quot;Inventory&quot;&gt;&#10;                    &lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;&#10;                &lt;/TabItem&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2061:2222" ph="&lt;&lt;local:GeneralTab x:Name=&quot;GeneralTabControl&quot; SteamLabelDoubleClicked=&quot;EditSteamLabel&quot;/&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2239:2415" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2290:2388" ph="&lt;&lt;ContentControl Name=&quot;SlotTabControl&quot;/&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2552:2741" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2606:2714" ph="&lt;&lt;ContentControl Name=&quot;InvestigationsTabControl&quot;/&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2873:3052" ph="&lt;&lt;Grid&gt;&#10;                        &lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;&#10;                    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1540673676719" expanded="true" signature="2922:3025" ph="&lt;&lt;ContentControl Name=&quot;InventoryTabControl&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MHW Save Editor/MainWindow.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="214" column="52" lean-forward="true" selection-start-line="214" selection-start-column="52" selection-end-line="214" selection-end-column="52" />
+        <state relative-caret-position="303">
+          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
-            <marker date="1540257063064" expanded="false" signature="6:393" ph="..." />
-            <marker date="1540257063064" expanded="true" signature="420:11112" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="427:505" ph="/// Interaction logic for MainWindow.xaml ... " />
-            <marker date="1540257063064" expanded="true" signature="574:11105" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="681:738" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="767:904" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="974:2385" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="1341:1506" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="1537:1699" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="2454:3745" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="2853:3735" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="2905:3577" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="2947:3326" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="3373:3559" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="3598:3720" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="3816:4671" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="4136:4661" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="4170:4432" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="4471:4647" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="4743:6587" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="5529:6055" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="5571:5801" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="5848:6037" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="6101:6577" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="6135:6347" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="6386:6563" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="6658:6807" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="6878:7027" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="7098:7247" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="7317:7754" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="7819:7865" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="7932:8210" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8296:8491" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8346:8481" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8548:8914" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8574:8904" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8637:8890" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8972:9340" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="8998:9330" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9062:9316" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9393:9404" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9457:9468" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9542:9832" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9583:9822" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9899:10191" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="9940:10181" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="10266:10433" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="10509:10677" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="10824:11099" ph="{...}" />
-            <marker date="1540257063064" expanded="true" signature="10986:11089" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="6:425" ph="..." />
+            <marker date="1540674056257" expanded="true" signature="452:12016" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="459:537" ph="/// Interaction logic for MainWindow.xaml ... " />
+            <marker date="1540674056257" expanded="true" signature="606:12009" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="912:1303" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="987:1293" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="1343:1513" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="1553:1610" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="1639:1776" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="1846:3289" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="2213:2378" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="2409:2571" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="3358:4649" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="3757:4639" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="3809:4481" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="3851:4230" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="4277:4463" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="4502:4624" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="4720:5575" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="5040:5565" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="5074:5336" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="5375:5551" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="5647:7491" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="6433:6959" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="6475:6705" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="6752:6941" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="7005:7481" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="7039:7251" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="7290:7467" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="7562:7711" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="7782:7931" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="8002:8151" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="8221:8658" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="8723:8769" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="8836:9114" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9200:9395" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9250:9385" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9452:9818" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9478:9808" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9541:9794" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9876:10244" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9902:10234" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="9966:10220" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10297:10308" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10361:10372" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10446:10736" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10487:10726" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10803:11095" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="10844:11085" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="11170:11337" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="11413:11581" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="11728:12003" ph="{...}" />
+            <marker date="1540674056257" expanded="true" signature="11890:11993" ph="{...}" />
           </folding>
         </state>
       </provider>
